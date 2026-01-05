@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="splash_background">#F1F5F9</color>
+    <color name="brand_primary">#0F17A6</color>
+    <color name="brand_secondary">#2E68C0</color>
+    <color name="input_background">#F1F5F9</color>
+    <color name="text_label">#333333</color>
+    <color name="text_hint">#94A3B8</color>
+    <color name="white">#FFFFFF</color>
+    <color name="bg_app">#F4F7FD</color>
+    <color name="primary_text">#1F2937</color>
+    <color name="secondary_text">#6B7280</color>
+    <color name="accent_blue">#2563EB</color>
+    <color name="search_bg">#FFFFFF</color>
+    <color name="red">#FFFF0000</color>
+    <color name="gray">#808080</color>
+</resources>
