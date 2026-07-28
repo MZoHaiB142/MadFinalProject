@@ -80,6 +80,18 @@ public class Constants {
     public static final String SUCCESS_PROFILE_SAVED = "Profile Saved Successfully!";
     public static final String SUCCESS_PASSWORD_RESET_SENT = "Reset link sent to your email. Please check your inbox.";
     
+    public static String getAppVersionInfo() {
+        return "AbroadIQ Build v1.0.0";
+    }
+
+    public static boolean isSupportedCategory(String category) {
+        if (category == null) return false;
+        return category.equals(CATEGORY_GENERAL) ||
+               category.equals(CATEGORY_VISA_HELP) ||
+               category.equals(CATEGORY_IELTS_PREP) ||
+               category.equals(CATEGORY_UNIVERSITY_LIFE);
+    }
+
     // Private constructor to prevent instantiation
     private Constants() {
         throw new UnsupportedOperationException("This is a utility class and cannot be instantiated");
