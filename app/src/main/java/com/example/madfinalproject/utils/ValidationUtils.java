@@ -32,6 +32,14 @@ public class ValidationUtils {
         return phone.replaceAll("[^0-9+]", "");
     }
     
+    public static boolean isNonEmpty(String text) {
+        return text != null && !text.trim().isEmpty();
+    }
+
+    public static String getOrDefault(String text, String fallback) {
+        return text != null ? text : fallback;
+    }
+
     private ValidationUtils() {
         throw new UnsupportedOperationException("This is a utility class and cannot be instantiated");
     }
