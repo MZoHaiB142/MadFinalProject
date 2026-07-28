@@ -55,6 +55,16 @@ public class LogUtils {
         return "[" + (tag != null ? tag : TAG) + "] AUDIT: " + actionMessage;
     }
 
+    public static void logTrace(String tag, String traceInfo) {
+        if (DEBUG && traceInfo != null) {
+            Log.d(tag != null ? tag : TAG, "[TRACE] " + traceInfo);
+        }
+    }
+
+    public static boolean isDebugEnabled() {
+        return DEBUG;
+    }
+
     private LogUtils() {
         throw new UnsupportedOperationException("This is a utility class and cannot be instantiated");
     }
