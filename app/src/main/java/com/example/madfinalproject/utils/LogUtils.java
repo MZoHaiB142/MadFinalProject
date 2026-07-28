@@ -48,6 +48,13 @@ public class LogUtils {
         }
     }
 
+    public static String formatAuditLog(String tag, String actionMessage) {
+        if (actionMessage == null) {
+            return "[" + (tag != null ? tag : TAG) + "] <empty_action>";
+        }
+        return "[" + (tag != null ? tag : TAG) + "] AUDIT: " + actionMessage;
+    }
+
     private LogUtils() {
         throw new UnsupportedOperationException("This is a utility class and cannot be instantiated");
     }
