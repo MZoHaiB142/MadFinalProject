@@ -1,3 +1,4 @@
+// communitypageActivity displays discussion forum posts with category filtering and bottom navigation.
 package com.example.madfinalproject;
 
 import android.annotation.SuppressLint;

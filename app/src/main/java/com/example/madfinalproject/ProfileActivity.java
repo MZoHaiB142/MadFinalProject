@@ -1,3 +1,4 @@
+// ProfileActivity presents user profile information, target study goals, and profile completion progress.
 package com.example.madfinalproject;
 
 import android.content.Intent;

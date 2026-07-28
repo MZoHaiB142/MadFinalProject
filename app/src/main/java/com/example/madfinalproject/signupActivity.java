@@ -1,3 +1,4 @@
+// signupActivity manages user registration and stores profile data in Firebase Realtime Database.
 package com.example.madfinalproject;
 
 import android.content.Intent;

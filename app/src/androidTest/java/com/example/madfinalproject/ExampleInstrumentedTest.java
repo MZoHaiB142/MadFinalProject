@@ -1,3 +1,4 @@
+// ExampleInstrumentedTest contains instrumented Android integration test cases.
 package com.example.madfinalproject;
 
 import android.content.Context;

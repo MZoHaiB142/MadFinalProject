@@ -1,3 +1,4 @@
+# Root Git ignore configuration for suppressing build artifacts and IDE runtime files.
 *.iml
 .gradle
 /local.properties

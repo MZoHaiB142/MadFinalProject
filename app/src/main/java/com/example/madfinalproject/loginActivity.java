@@ -1,3 +1,4 @@
+// loginActivity handles user authentication using Firebase Email/Password, Google Sign-In, and Facebook Login.
 package com.example.madfinalproject;
 
 import android.annotation.SuppressLint;

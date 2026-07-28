@@ -1,3 +1,4 @@
+<!-- Layout view item for scholarship opportunity cards. -->
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="160dp"
     android:layout_height="200dp"

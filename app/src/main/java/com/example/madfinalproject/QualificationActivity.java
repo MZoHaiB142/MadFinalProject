@@ -1,3 +1,4 @@
+// QualificationActivity dynamically builds and displays required document checklist items based on qualification level.
 package com.example.madfinalproject;
 
 import android.os.Bundle;

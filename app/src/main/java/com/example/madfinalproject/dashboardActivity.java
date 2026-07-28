@@ -1,3 +1,4 @@
+// dashboardActivity serves as the main home dashboard showing user greeting and bottom navigation options.
 package com.example.madfinalproject;
 
 import android.annotation.SuppressLint;

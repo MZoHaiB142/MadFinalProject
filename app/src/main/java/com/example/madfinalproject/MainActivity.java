@@ -1,3 +1,4 @@
+// MainActivity serves as the splash screen launcher that navigates to the login screen after a delay.
 package com.example.madfinalproject;
 
 import android.annotation.SuppressLint;

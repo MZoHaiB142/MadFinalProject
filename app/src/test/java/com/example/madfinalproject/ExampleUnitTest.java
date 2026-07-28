@@ -1,3 +1,4 @@
+// ExampleUnitTest contains local JVM unit test cases for testing application logic.
 package com.example.madfinalproject;
 
 import org.junit.Test;

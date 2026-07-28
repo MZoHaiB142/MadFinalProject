@@ -1,3 +1,4 @@
+// Module-level Gradle build script defining app dependencies, SDK targets, and plugins.
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")

@@ -1,3 +1,4 @@
+# Gradle version catalog centralizing dependency and plugin versions.
 [versions]
 agp = "8.13.2"
 junit = "4.13.2"

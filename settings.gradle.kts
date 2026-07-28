@@ -1,3 +1,4 @@
+// Settings build file defining repository management, root project name, and included modules.
 pluginManagement {
     repositories {
         google {

@@ -1,3 +1,4 @@
+// EditProfileActivity provides a step-by-step wizard to update user profile details, education, and target interests.
 package com.example.madfinalproject;
 
 import android.content.Intent;

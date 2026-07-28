@@ -1,3 +1,4 @@
+// CommunityAdapter manages binding community post data and user interactions to RecyclerView item views.
 package com.example.madfinalproject;
 
 import android.view.LayoutInflater;

@@ -1,1 +1,2 @@
+# App module Git ignore file for excluding module build outputs.
 /build

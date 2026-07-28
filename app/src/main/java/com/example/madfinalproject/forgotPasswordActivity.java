@@ -1,3 +1,4 @@
+// forgotPasswordActivity handles sending password reset link emails to users via Firebase Auth.
 package com.example.madfinalproject;
 
 import android.annotation.SuppressLint;

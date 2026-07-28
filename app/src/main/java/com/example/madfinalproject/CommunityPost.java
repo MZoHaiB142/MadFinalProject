@@ -1,3 +1,4 @@
+// CommunityPost models the data object for individual community forum posts.
 package com.example.madfinalproject;
 
 public class CommunityPost {
