@@ -24,6 +24,13 @@ public class ValidationUtils {
     public static String trimString(String input) {
         return input != null ? input.trim() : "";
     }
+
+    public static String sanitizePhoneNumber(String phone) {
+        if (phone == null) {
+            return "";
+        }
+        return phone.replaceAll("[^0-9+]", "");
+    }
     
     private ValidationUtils() {
         throw new UnsupportedOperationException("This is a utility class and cannot be instantiated");
