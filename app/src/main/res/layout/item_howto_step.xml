@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="start"
+    android:paddingBottom="7dp">
+
+    <TextView
+        android:id="@+id/tv_dot"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:text="1"
+        android:textColor="#7B93FF"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:background="@drawable/bg_howto_num" />
+
+    <TextView
+        android:id="@+id/tv_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Register on British Council website"
+        android:textColor="#E5E7EB"
+        android:textSize="14sp"
+        android:lineSpacingMultiplier="1.4"
+        android:layout_marginStart="10dp" />
+
+</LinearLayout>

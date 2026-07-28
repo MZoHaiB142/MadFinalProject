@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginBottom="12dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/card_root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_match_card"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="@drawable/selector_ripple_dark2">
+
+        <!-- Top bar -->
+        <TextView
+            android:id="@+id/tv_flag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Country"
+            android:textSize="18sp"
+            android:layout_margin="12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_country"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Canada"
+            android:textColor="#94A3B8"
+            android:textSize="11sp"
+            android:layout_marginStart="4dp"
+            app:layout_constraintStart_toEndOf="@id/tv_flag"
+            app:layout_constraintTop_toTopOf="@id/tv_flag"
+            app:layout_constraintBottom_toBottomOf="@id/tv_flag" />
+
+        <!-- Top pick badge -->
+        <TextView
+            android:id="@+id/tv_pick_badge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Top Pick"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:background="@drawable/bg_badge_green"
+            android:layout_marginEnd="12dp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_flag"
+            app:layout_constraintBottom_toBottomOf="@id/tv_flag" />
+
+        <!-- University Name -->
+        <TextView
+            android:id="@+id/tv_uni_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="University of Toronto"
+            android:textColor="#EEF2FF"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginTop="2dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_flag" />
+
+        <!-- Program -->
+        <TextView
+            android:id="@+id/tv_program"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="MS Computer Science"
+            android:textColor="#94A3B8"
+            android:textSize="12sp"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_uni_name" />
+
+        <!-- Score + bars section -->
+        <LinearLayout
+            android:id="@+id/score_row"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_program">
+
+            <!-- Score circle (custom view) -->
+            <com.example.madfinalproject.views.ScoreRingView
+                android:id="@+id/score_ring"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:layout_marginEnd="12dp"
+                tools:ignore="MissingClass" />
+
+            <!-- Mini bars -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <!-- Visa Rate bar -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="5dp">
+
+                    <TextView
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:text="Visa Rate"
+                        android:textColor="#94A3B8"
+                        android:textSize="10sp" />
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_bar_track"
+                        android:layout_marginEnd="8dp">
+
+                        <View
+                            android:id="@+id/bar_visa"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/bg_bar_green" />
+                    </FrameLayout>
+
+                    <TextView
+                        android:id="@+id/tv_visa_rate"
+                        android:layout_width="28dp"
+                        android:layout_height="wrap_content"
+                        android:text="74%"
+                        android:textColor="#10B981"
+                        android:textSize="10sp"
+                        android:textStyle="bold"
+                        android:gravity="end" />
+                </LinearLayout>
+
+                <!-- Accept Rate bar -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="5dp">
+
+                    <TextView
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:text="Acceptance"
+                        android:textColor="#94A3B8"
+                        android:textSize="10sp" />
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_bar_track"
+                        android:layout_marginEnd="8dp">
+
+                        <View
+                            android:id="@+id/bar_accept"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/bg_bar_amber" />
+                    </FrameLayout>
+
+                    <TextView
+                        android:id="@+id/tv_accept_rate"
+                        android:layout_width="28dp"
+                        android:layout_height="wrap_content"
+                        android:text="43%"
+                        android:textColor="#F59E0B"
+                        android:textSize="10sp"
+                        android:textStyle="bold"
+                        android:gravity="end" />
+                </LinearLayout>
+
+                <!-- GPA req bar -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:text="GPA Req"
+                        android:textColor="#94A3B8"
+                        android:textSize="10sp" />
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_bar_track"
+                        android:layout_marginEnd="8dp">
+
+                        <View
+                            android:id="@+id/bar_gpa"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/bg_bar_blue" />
+                    </FrameLayout>
+
+                    <TextView
+                        android:id="@+id/tv_gpa_req"
+                        android:layout_width="28dp"
+                        android:layout_height="wrap_content"
+                        android:text="3.5"
+                        android:textColor="#5B96FF"
+                        android:textSize="10sp"
+                        android:textStyle="bold"
+                        android:gravity="end" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Tags row -->
+        <LinearLayout
+            android:id="@+id/tags_row"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/score_row" />
+
+        <!-- Action buttons -->
+        <LinearLayout
+            android:id="@+id/action_row"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="14dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tags_row">
+
+            <Button
+                android:id="@+id/btn_detail"
+                android:layout_width="0dp"
+                android:layout_height="36dp"
+                android:layout_weight="1"
+                android:text="Details"
+                android:textColor="#94A3B8"
+                android:textSize="12sp"
+                android:background="@drawable/bg_btn_outline_dark"
+                android:layout_marginEnd="8dp" />
+
+            <Button
+                android:id="@+id/btn_apply"
+                android:layout_width="0dp"
+                android:layout_height="36dp"
+                android:layout_weight="1.4"
+                android:text="Apply here"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:background="@drawable/bg_btn_gradient" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

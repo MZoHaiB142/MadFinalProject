@@ -7,6 +7,10 @@ import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.madfinalproject.utils.Constants;
+import com.example.madfinalproject.utils.LogUtils;
+import com.example.madfinalproject.utils.ValidationUtils;
+
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
@@ -25,8 +29,9 @@ import com.google.firebase.auth.FacebookAuthProvider;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.GoogleAuthProvider;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
+// ✅ Firestore Import
+import com.google.firebase.firestore.FirebaseFirestore;
+
 import com.facebook.CallbackManager;
 import com.facebook.FacebookCallback;
 import com.facebook.FacebookException;
@@ -44,25 +49,28 @@ public class signupActivity extends AppCompatActivity {
 
     // Firebase
     private FirebaseAuth mAuth;
-    private DatabaseReference mDatabase;
+    // ✅ Change 1: Firestore Variable
+    private FirebaseFirestore db;
+
     // Social Login
     private GoogleSignInClient mGoogleSignInClient;
-    private static final int RC_SIGN_IN = 9001;
     private CallbackManager mCallbackManager;
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.signup);
+
+        // Initialize Facebook SDK first
         com.facebook.FacebookSdk.sdkInitialize(getApplicationContext());
 
+        // Set layout only once
         setContentView(R.layout.signup);
-        // 1. Initialize Firebase
+
+        // 1. Initialize Firebase Auth
         mAuth = FirebaseAuth.getInstance();
-        // Note: Make sure your database rules allow writing!
-        mDatabase = FirebaseDatabase.getInstance().getReference("Users");
+
+        // ✅ Change 2: Initialize Firestore
+        db = FirebaseFirestore.getInstance();
 
         // 2. Initialize UI elements
         etFullName = findViewById(R.id.etFullName);
@@ -75,15 +83,21 @@ public class signupActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+        // Get Google OAuth Client ID from resources
+        String googleClientId = getString(R.string.google_oauth_client_id);
+        if (TextUtils.isEmpty(googleClientId)) {
+            googleClientId = "744209892194-6k91hb0n24moamqap6acuhahv0kie1v4.apps.googleusercontent.com";
+        }
+
         GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
-                .requestIdToken("744209892194-6k91hb0n24moamqap6acuhahv0kie1v4.apps.googleusercontent.com")
+                .requestIdToken(googleClientId)
                 .requestEmail()
                 .build();
         mGoogleSignInClient = GoogleSignIn.getClient(this, gso);
         mCallbackManager = CallbackManager.Factory.create();
 
-        // 3. Set the Button Listener (ONLY ONCE)
-        // We call validateAndRegister, which will then call createUser if everything is okay.
+        // 3. Set the Button Listener
         findViewById(R.id.btnCreateAccount).setOnClickListener(v -> validateAndRegister());
         findViewById(R.id.btnGoogle).setOnClickListener(v -> signInWithGoogle());
 
@@ -110,30 +124,73 @@ public class signupActivity extends AppCompatActivity {
     // SECTION 3: Google & Facebook Login Logic
     // ==========================================
     private void signInWithGoogle() {
-        Intent signInIntent = mGoogleSignInClient.getSignInIntent();
-        startActivityForResult(signInIntent, RC_SIGN_IN);
+        try {
+            Intent signInIntent = mGoogleSignInClient.getSignInIntent();
+            startActivityForResult(signInIntent, Constants.RC_GOOGLE_SIGN_IN);
+        } catch (Exception e) {
+            LogUtils.e("SignupActivity", "Google sign-in error", e);
+            Toast.makeText(this, "Google Sign-In Error", Toast.LENGTH_SHORT).show();
+        }
     }
+
     private void firebaseAuthWithGoogle(String idToken) {
+        if (TextUtils.isEmpty(idToken)) {
+            Toast.makeText(this, "Google authentication failed", Toast.LENGTH_SHORT).show();
+            return;
+        }
+
         AuthCredential credential = GoogleAuthProvider.getCredential(idToken, null);
         mAuth.signInWithCredential(credential).addOnCompleteListener(this, task -> {
             if (task.isSuccessful()) {
                 FirebaseUser user = mAuth.getCurrentUser();
-                // Save using Google Display Name
-                saveUserToDatabase(user, user.getDisplayName());
+                if (user != null) {
+                    String displayName = user.getDisplayName();
+                    if (TextUtils.isEmpty(displayName)) {
+                        displayName = "User"; // Default name
+                    }
+                    LogUtils.d("SignupActivity", "Google auth successful");
+                    saveUserToDatabase(user, displayName);
+                } else {
+                    Toast.makeText(signupActivity.this, Constants.ERROR_USER_NOT_LOGGED_IN, Toast.LENGTH_SHORT).show();
+                }
             } else {
-                Toast.makeText(signupActivity.this, "Google Auth Failed", Toast.LENGTH_SHORT).show();
+                String errorMessage = "Google Auth Failed";
+                if (task.getException() != null) {
+                    errorMessage = task.getException().getMessage();
+                    LogUtils.e("SignupActivity", "Google auth failed", task.getException());
+                }
+                Toast.makeText(signupActivity.this, errorMessage, Toast.LENGTH_SHORT).show();
             }
         });
     }
+
     private void handleFacebookAccessToken(AccessToken token) {
+        if (token == null || TextUtils.isEmpty(token.getToken())) {
+            Toast.makeText(this, "Facebook authentication failed", Toast.LENGTH_SHORT).show();
+            return;
+        }
+
         AuthCredential credential = FacebookAuthProvider.getCredential(token.getToken());
         mAuth.signInWithCredential(credential).addOnCompleteListener(this, task -> {
             if (task.isSuccessful()) {
                 FirebaseUser user = mAuth.getCurrentUser();
-                // Save using Facebook Name
-                saveUserToDatabase(user, user.getDisplayName());
+                if (user != null) {
+                    String displayName = user.getDisplayName();
+                    if (TextUtils.isEmpty(displayName)) {
+                        displayName = "User"; // Default name
+                    }
+                    LogUtils.d("SignupActivity", "Facebook auth successful");
+                    saveUserToDatabase(user, displayName);
+                } else {
+                    Toast.makeText(signupActivity.this, Constants.ERROR_USER_NOT_LOGGED_IN, Toast.LENGTH_SHORT).show();
+                }
             } else {
-                Toast.makeText(signupActivity.this, "Facebook Auth Failed", Toast.LENGTH_SHORT).show();
+                String errorMessage = "Facebook Auth Failed";
+                if (task.getException() != null) {
+                    errorMessage = task.getException().getMessage();
+                    LogUtils.e("SignupActivity", "Facebook auth failed", task.getException());
+                }
+                Toast.makeText(signupActivity.this, errorMessage, Toast.LENGTH_SHORT).show();
             }
         });
     }
@@ -142,33 +199,36 @@ public class signupActivity extends AppCompatActivity {
     // SECTION 1: EMAIL & PASSWORD LOGIC
     // ==========================================
     private void validateAndRegister() {
-        String fullName = etFullName.getText().toString().trim();
-        String email = etEmail.getText().toString().trim();
-        String password = etPassword.getText().toString().trim();
+        String fullName = ValidationUtils.trimString(etFullName.getText().toString());
+        String email = ValidationUtils.trimString(etEmail.getText().toString());
+        String password = ValidationUtils.trimString(etPassword.getText().toString());
 
-        // 4. Validation Logic
-        if (TextUtils.isEmpty(fullName)) {
-            etFullName.setError("Full Name is required");
+        // Validation Logic
+        if (!ValidationUtils.isValidName(fullName)) {
+            etFullName.setError(Constants.ERROR_NAME_REQUIRED);
+            etFullName.requestFocus();
             return;
         }
-        if (TextUtils.isEmpty(email)) {
-            etEmail.setError("Email is required");
+
+        if (!ValidationUtils.isValidEmail(email)) {
+            etEmail.setError(Constants.ERROR_EMAIL_REQUIRED);
+            etEmail.requestFocus();
             return;
         }
-        if (TextUtils.isEmpty(password)) {
-            etPassword.setError("Password is required");
+
+        if (!ValidationUtils.isValidPassword(password)) {
+            etPassword.setError(Constants.ERROR_PASSWORD_TOO_SHORT);
+            etPassword.requestFocus();
             return;
         }
-        if (password.length() < 6) {
-            etPassword.setError("Password must be at least 6 characters");
-            return;
-        }
+
         if (!cbTerms.isChecked()) {
-            Toast.makeText(this, "Please agree to the Terms & Privacy Policy", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, Constants.ERROR_TERMS_NOT_ACCEPTED, Toast.LENGTH_SHORT).show();
             return;
         }
 
-        // 5. If everything is good, create the user in Firebase Auth
+        // If everything is good, create the user in Firebase Auth
+        LogUtils.d("SignupActivity", "Attempting registration for: " + email);
         createUser(email, password, fullName);
     }
 
@@ -178,45 +238,62 @@ public class signupActivity extends AppCompatActivity {
                     if (task.isSuccessful()) {
                         // User created in Auth, now save details to Database
                         FirebaseUser user = mAuth.getCurrentUser();
-                        saveUserToDatabase(user, fullName);
+                        if (user != null) {
+                            LogUtils.d("SignupActivity", "User created successfully");
+                            saveUserToDatabase(user, fullName);
+                        } else {
+                            Toast.makeText(signupActivity.this, Constants.ERROR_USER_NOT_LOGGED_IN, Toast.LENGTH_SHORT).show();
+                        }
                     } else {
                         // If creation fails, show the error
-                        Toast.makeText(signupActivity.this, "Registration Failed: " + task.getException().getMessage(), Toast.LENGTH_LONG).show();
+                        String errorMessage = "Registration Failed";
+                        if (task.getException() != null) {
+                            errorMessage = task.getException().getMessage();
+                            LogUtils.e("SignupActivity", "Registration failed", task.getException());
+                        }
+                        Toast.makeText(signupActivity.this, errorMessage, Toast.LENGTH_LONG).show();
                     }
                 });
     }
 
     // ==========================================
-    // SECTION 2: DATABASE SAVING & NAVIGATION
+    // SECTION 2: DATABASE SAVING & NAVIGATION (FIRESTORE)
     // ==========================================
     private void saveUserToDatabase(FirebaseUser user, String fullName) {
-        // FIXED: Changed '!=' to '=='
-        if (user == null) return;
+        if (user == null) {
+            LogUtils.e("SignupActivity" + "User is null, cannot save to database");
+            return;
+        }
 
         String userId = user.getUid();
         String email = user.getEmail();
 
-        // Prepare data
+        // Prepare data using constants
         HashMap<String, Object> userMap = new HashMap<>();
-        userMap.put("uid", userId);
-        userMap.put("fullName", fullName);
-        userMap.put("email", email);
+        userMap.put(Constants.KEY_UID, userId);
+        userMap.put(Constants.KEY_FULL_NAME, fullName);
+        if (email != null) {
+            userMap.put(Constants.KEY_EMAIL, email);
+        }
 
-        // Save to Database
-        mDatabase.child(userId).setValue(userMap)
-                .addOnCompleteListener(task -> {
-                    if (task.isSuccessful()) {
-                        Toast.makeText(signupActivity.this, "Account Created Successfully!", Toast.LENGTH_SHORT).show();
+        db.collection("Users").document(userId).set(userMap)
+                .addOnSuccessListener(aVoid -> {
+                    LogUtils.d("SignupActivity", "User data saved to database");
+                    Toast.makeText(signupActivity.this, Constants.SUCCESS_ACCOUNT_CREATED, Toast.LENGTH_SHORT).show();
 
-                        // Navigate to Dashboard or Login
-                        Intent intent = new Intent(signupActivity.this, dashboardActivity.class);
-                        startActivity(intent);
-                        finish();
-                    } else {
-                        Toast.makeText(signupActivity.this, "Database Error: " + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
-                    }
+                    // Navigate to Dashboard
+                    Intent intent = new Intent(signupActivity.this, dashboardActivity.class);
+                    intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                    startActivity(intent);
+                    finish();
+                })
+                .addOnFailureListener(e -> {
+                    String errorMessage = "Database Error: " + e.getMessage();
+                    LogUtils.e("SignupActivity", "Database save failed", e);
+                    Toast.makeText(signupActivity.this, errorMessage, Toast.LENGTH_SHORT).show();
                 });
     }
+
     // ==========================================
     // SECTION 4: ACTIVITY RESULT
     // ==========================================
@@ -228,13 +305,18 @@ public class signupActivity extends AppCompatActivity {
         mCallbackManager.onActivityResult(requestCode, resultCode, data);
 
         // Pass result to Google
-        if (requestCode == RC_SIGN_IN) {
+        if (requestCode == Constants.RC_GOOGLE_SIGN_IN) {
             Task<GoogleSignInAccount> task = GoogleSignIn.getSignedInAccountFromIntent(data);
             try {
                 GoogleSignInAccount account = task.getResult(ApiException.class);
-                firebaseAuthWithGoogle(account.getIdToken());
+                if (account != null) {
+                    firebaseAuthWithGoogle(account.getIdToken());
+                } else {
+                    Toast.makeText(this, "Google Sign-In Failed", Toast.LENGTH_SHORT).show();
+                }
             } catch (ApiException e) {
-                Toast.makeText(this, "Google Sign-In Failed", Toast.LENGTH_SHORT).show();
+                LogUtils.e("SignupActivity", "Google sign-in exception", e);
+                Toast.makeText(this, "Google Sign-In Failed: " + e.getMessage(), Toast.LENGTH_SHORT).show();
             }
         }
     }

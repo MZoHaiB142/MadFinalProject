@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingStart="18dp"
+    android:paddingEnd="18dp"
+    android:paddingTop="24dp"
+    android:paddingBottom="10dp"
+    android:gravity="center_vertical">
+
+    <!-- Phase badge -->
+    <TextView
+        android:id="@+id/tv_phase_badge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PHASE 1"
+        android:textColor="#FFFFFF"
+        android:textSize="9sp"
+        android:textStyle="bold"
+        android:letterSpacing="0.12"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:background="@drawable/bg_phase_amber" />
+
+    <!-- Phase title -->
+    <TextView
+        android:id="@+id/tv_phase_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Foundation"
+        android:textColor="#F0F2FF"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_marginStart="10dp" />
+
+    <!-- Duration -->
+    <TextView
+        android:id="@+id/tv_phase_duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2-3 months"
+        android:textColor="#4B5563"
+        android:textSize="11sp" />
+
+</LinearLayout>

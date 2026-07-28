@@ -4,6 +4,10 @@ import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import android.os.Looper;
+
+import com.example.madfinalproject.utils.Constants;
+import com.example.madfinalproject.utils.LogUtils;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -24,16 +28,12 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-        new Handler().postDelayed(new Runnable() {
-            @Override
-            public void run() {Intent intent = new Intent(MainActivity.this, loginActivity.class);
-
-                // 2. Start the Login Activity
-                startActivity(intent);
-
-                // 3. Close the Splash Activity so the user can't go back to it
-                finish();
-            }
-        }, 1000);
-        }
+        // Use Handler with Looper for better compatibility
+        new Handler(Looper.getMainLooper()).postDelayed(() -> {
+            LogUtils.d("MainActivity", "Navigating to login screen");
+            Intent intent = new Intent(MainActivity.this, loginActivity.class);
+            startActivity(intent);
+            finish(); // Close splash screen so user can't go back
+        }, Constants.SPLASH_DELAY_MS);
     }
+}

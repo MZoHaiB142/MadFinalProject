@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <gradient
+        android:angle="315"
+        android:startColor="#281A4A"
+        android:endColor="#0F3866"
+        android:type="linear"/>
+
+    <stroke
+        android:width="1dp"
+        android:color="#22C4D6"/>
+
+    <corners android:radius="20dp"/> <!-- Filters thore zyada gol (pill shape) achay lagte hain -->
+</shape>

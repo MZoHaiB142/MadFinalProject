@@ -1,6 +1,10 @@
 <resources>
-    <string name="app_name">MadFinalProject</string>
-    <string name="facebook_app_id">4462643634061029</string>
-    <string name="facebook_client_token">7ad0abc57ea7913d98e507d65e94432a</string>
-    <string name="fb_login_protocol_scheme">fb4462643634061029</string>
+    <string name="app_name" translatable="false">MadFinalProject</string>
+    <string name="facebook_app_id" translatable="false">4462643634061029</string>
+    <string name="facebook_client_token" translatable="false">7ad0abc57ea7913d98e507d65e94432a</string>
+    <string name="fb_login_protocol_scheme" translatable="false">fb4462643634061029</string>
+    <!-- TODO: Replace with your actual Google OAuth Client ID from Google Cloud Console -->
+    <string name="google_oauth_client_id" translatable="false">744209892194-6k91hb0n24moamqap6acuhahv0kie1v4.apps.googleusercontent.com</string>
+    <!-- TODO: Get your Gemini API key from https://makersuite.google.com/app/apikey and replace below -->
+    <string name="gemini_api_key" translatable="false">AIzaSyC9qAfAvU8oafp_MIlgswBFWIoL11r14Co</string>
 </resources>

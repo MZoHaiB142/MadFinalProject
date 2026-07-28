@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true"
+        android:drawable="@drawable/bg_chip_active" />
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <solid android:color="#0D1A35"/>
+            <stroke android:width="1.5dp" android:color="#2A5ACC"/>
+            <corners android:radius="50dp"/>
+        </shape>
+    </item>
+    <item android:drawable="@drawable/bg_chip_default" />
+</selector>

@@ -7,6 +7,10 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.madfinalproject.utils.Constants;
+import com.example.madfinalproject.utils.LogUtils;
+import com.example.madfinalproject.utils.ValidationUtils;
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
@@ -48,40 +52,39 @@ public class forgotPasswordActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-        Button btnResetPassword = findViewById(R.id.btnResetPassword);
 
     }
 
     private void resetUserPassword() {
-        String email = etResetEmail.getText().toString().trim();
+        String email = ValidationUtils.trimString(etResetEmail.getText().toString());
 
-        // Check karein ke Email field khali na ho
-        if (TextUtils.isEmpty(email)) {
-            etResetEmail.setError("Email is required");
+        // Validate email
+        if (!ValidationUtils.isValidEmail(email)) {
+            etResetEmail.setError(Constants.ERROR_EMAIL_REQUIRED);
             etResetEmail.requestFocus();
             return;
         }
 
-        // Firebase ko bolein ke Link Bheje
-        mAuth.sendPasswordResetEmail(email)
-                .addOnCompleteListener(new OnCompleteListener<Void>() {
-                    @Override
-                    public void onComplete(@NonNull Task<Void> task) {
-                        if (task.isSuccessful()) {
-                            // Agar email chala gaya
-                            Toast.makeText(forgotPasswordActivity.this,
-                                    "Reset link sent to your email. Please check your inbox.",
-                                    Toast.LENGTH_LONG).show();
+        LogUtils.d("ForgotPasswordActivity", "Sending password reset email to: " + email);
 
-                            // User ko wapas login screen par bhej dein (Optional)
-                            finish();
-                        } else {
-                            // Agar koi masla hua (User nahi mila, ya internet issue)
-                            String error = task.getException().getMessage();
-                            Toast.makeText(forgotPasswordActivity.this,
-                                    "Error: " + error,
-                                    Toast.LENGTH_LONG).show();
+        // Send password reset email via Firebase
+        mAuth.sendPasswordResetEmail(email)
+                .addOnCompleteListener(task -> {
+                    if (task.isSuccessful()) {
+                        LogUtils.d("ForgotPasswordActivity", "Password reset email sent successfully");
+                        Toast.makeText(forgotPasswordActivity.this,
+                                Constants.SUCCESS_PASSWORD_RESET_SENT,
+                                Toast.LENGTH_LONG).show();
+                        finish(); // Return to login screen
+                    } else {
+                        String errorMessage = Constants.ERROR_UNKNOWN;
+                        if (task.getException() != null) {
+                            errorMessage = task.getException().getMessage();
+                            LogUtils.e("ForgotPasswordActivity", "Password reset failed", task.getException());
                         }
+                        Toast.makeText(forgotPasswordActivity.this,
+                                "Error: " + errorMessage,
+                                Toast.LENGTH_LONG).show();
                     }
                 });
     }

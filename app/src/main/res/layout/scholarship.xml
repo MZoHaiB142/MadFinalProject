@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F5F5">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="4dp">
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/searchView"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:queryHint="Search scholarships..."
+            app:iconifiedByDefault="false"
+            android:background="#FFFFFF"/>
+    </androidx.cardview.widget.CardView>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="16dp"
+        android:paddingBottom="10dp"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btnFilterAll"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="All"
+                android:backgroundTint="#2196F3"
+                android:layout_marginEnd="8dp"/>
+            <Button
+                android:id="@+id/btnFilterFull"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Fully Funded"
+                android:backgroundTint="#E0E0E0"
+                android:textColor="#000000"
+                android:layout_marginEnd="8dp"/>
+            <Button
+                android:id="@+id/btnFilterPartial"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Partial"
+                android:backgroundTint="#E0E0E0"
+                android:textColor="#000000"
+                android:layout_marginEnd="8dp"/>
+            <Button
+                android:id="@+id/btnFilterEurope"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Europe"
+                android:backgroundTint="#E0E0E0"
+                android:textColor="#000000"
+                android:layout_marginEnd="8dp"/>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewScholarships"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="4dp"
+        tools:listitem="@layout/item_scholarship"/>
+
+</LinearLayout>

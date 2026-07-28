@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="start"
+    android:paddingTop="4dp"
+    android:paddingBottom="4dp"
+    android:paddingStart="12dp"
+    android:paddingEnd="60dp">
+
+    <!-- Consultant Profile Photo (small) -->
+    <ImageView
+        android:id="@+id/ivSenderPhoto"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:background="@drawable/bg_logo_circle"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_university"
+        android:layout_marginEnd="8dp"
+        android:layout_gravity="bottom" />
+
+    <!-- Message bubble + time -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:maxWidth="240dp">
+
+        <!-- Bubble -->
+        <TextView
+            android:id="@+id/tvMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_bubble_received"
+            android:padding="10dp"
+            android:paddingStart="14dp"
+            android:paddingEnd="14dp"
+            android:text="Hello! How can I help you?"
+            android:textColor="#1A1A2E"
+            android:textSize="14sp"
+            android:lineSpacingMultiplier="1.3" />
+
+        <!-- Time -->
+        <TextView
+            android:id="@+id/tvTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10:30 AM"
+            android:textColor="#AAAAAA"
+            android:textSize="10sp"
+            android:layout_marginTop="3dp"
+            android:layout_marginStart="4dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

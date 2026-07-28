@@ -3,6 +3,15 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.USE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
 
     <application
         android:allowBackup="true"
@@ -12,7 +21,18 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
         android:theme="@style/Theme.MadFinalProject">
+
+        <receiver
+            android:name=".MyReceiver"
+            android:exported="false"/>
+        <receiver android:name=".scholarships.ScholarshipReminderReceiver" android:exported="false"/>
+
+        <service
+            android:name=".MyService"
+            android:exported="false"
+            android:foregroundServiceType="mediaPlayback" />
 
         <meta-data
             android:name="com.facebook.sdk.ApplicationId"
@@ -51,8 +71,64 @@
         <activity android:name=".dashboardActivity"/>
         <activity android:name=".ProfileActivity"/>
         <activity android:name=".EditProfileActivity"/>
-        <activity android:name=".QualificationActivity"/>
         <activity android:name=".communitypageActivity"/>
+        <activity android:name=".ChatActivity" />
+        <activity android:name=".CreatePostActivity" />
+        <activity android:name=".CommentsActivity" />
+        <activity android:name=".CostCalculatorActivity" />
+        <activity android:name=".ScholarshipActivity" />
+        <activity android:name=".MyPostsActivity" />
+        <activity android:name=".ExploreActivity"/>
+        <activity android:name=".CountrySelectionActivity"/>
+        <activity android:name=".sopUniversitySelectionActivity" tools:ignore="Instantiatable" />
+        <activity android:name=".SopResultActivity"/>
+        <activity android:name=".UserDetailsActivity"/>
+        <activity android:name=".CountrySelectionRoadmapActivity"/>
+        <activity android:name=".RoadmapActivity"/>
+        <activity android:name=".LiveConsultantActivity" />
+        <activity android:name=".AIEligibilityActivity" />
+        <activity android:name=".ConsultantsChatlistActivity" />
+        <activity android:name=".ConsultantsChatActivity" />
+        <activity android:name=".ConsultantsCallActivity" />
+        <activity android:name=".TestPreparationActivity" />
+        <activity android:name=".EnglishLanguageTestsActivity" />
+        <activity android:name=".IeltsAcademicActivity" />
+        <activity android:name=".PteAcademicActivity" />
+        <activity android:name=".IeltsPreparationActivity" />
+        <activity android:name=".IeltsLessonsActivity" />
+        <activity android:name=".IeltsPracticeActivity" />
+        <activity android:name=".IeltsMockTestsActivity" />
+        <activity android:name=".IeltsReportsActivity" />
+        <activity android:name=".PtePreparationActivity" />
+        <activity android:name=".PteLessonsActivity" />
+        <activity android:name=".PtePracticeActivity" />
+        <activity android:name=".PteMockTestsActivity" />
+        <activity android:name=".PteReportsActivity" />
+        <activity android:name=".EnglishFoundationActivity" />
+        <activity android:name=".GrammarTopicsActivity" />
+        <activity android:name=".GrammarLessonActivity" />
+        <activity android:name=".VocabularyHomeActivity" />
+        <activity android:name=".VocabularyWordsActivity" />
+        <activity android:name=".VocabularyDetailActivity" />
+        <activity android:name=".VocabularyFlashcardsActivity" />
+        <activity android:name=".VocabularyQuizActivity" />
+        <activity android:name=".VocabularyMatchActivity" />
+        <activity android:name=".VocabularyFillBlankActivity" />
+        <activity android:name=".VocabularyListeningActivity" />
+        <activity android:name=".VocabularySpeakingActivity" />
+        <activity android:name=".VocabularyBookmarksActivity" />
+        <activity android:name=".VocabularyProgressActivity" />
+        <activity android:name=".VocabularyChallengeActivity" />
+        <activity android:name=".FoundationFlowActivity" />
+        <activity android:name=".AdmissionTestsActivity" />
+        <activity android:name=".SatDetailActivity" />
+        <activity android:name=".VisaMockInterviewActivity" />
+        <activity android:name=".VisaInterviewDashboardActivity" />
+        <activity android:name=".VisaInterviewSessionActivity" />
+        <activity android:name=".PersonalBackgroundActivity" />
+        <activity android:name=".VisaInterviewResultActivity" />
+        <activity android:name=".VisaInterviewProgressActivity" />
+        <activity android:name=".VisaTopicDetailActivity" />
 
 
     </application>

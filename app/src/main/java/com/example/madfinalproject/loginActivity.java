@@ -9,6 +9,10 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.madfinalproject.utils.Constants;
+import com.example.madfinalproject.utils.LogUtils;
+import com.example.madfinalproject.utils.ValidationUtils;
+
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -47,7 +51,6 @@ public class loginActivity extends AppCompatActivity {
 
     // Google Variables
     private GoogleSignInClient mGoogleSignInClient;
-    private static final int RC_SIGN_IN = 9001;
 
     // Facebook Variables
     private CallbackManager mCallbackManager;
@@ -56,12 +59,11 @@ public class loginActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.login);
 
-        // ✅ STEP 1: Facebook Init sabse pehle (Crash se bachne ke liye)
+
         com.facebook.FacebookSdk.sdkInitialize(getApplicationContext());
 
-        // ✅ STEP 2: Layout set karein (SIRF EK BAAR)
-        setContentView(R.layout.login);
 
         // 1. Initialize Firebase
         mAuth = FirebaseAuth.getInstance();
@@ -83,13 +85,32 @@ public class loginActivity extends AppCompatActivity {
             return insets;
         });
 
-        // ⚠️ DHYAAN DEIN: Maine yahan se doosra 'setContentView' HATA DIYA hai.
+
+        // ==========================================
+        // LISTENERS
+        // ==========================================
+        btnContinue.setOnClickListener(v -> loginUser());
+        btnTabSignup.setOnClickListener(v -> goToSignup());
+        tvSignupLink.setOnClickListener(v -> goToSignup());
+        tvForgotPassword.setOnClickListener(v -> {
+            Intent intent = new Intent(loginActivity.this, forgotPasswordActivity.class);
+            startActivity(intent);
+        });
+
+
 
         // ==========================================
         // GOOGLE SETUP
         // ==========================================
+        // TODO: Move Google OAuth Client ID to strings.xml or build config for security
+        String googleClientId = getString(R.string.google_oauth_client_id);
+        if (TextUtils.isEmpty(googleClientId)) {
+            // Fallback for development (should be removed in production)
+            googleClientId = "744209892194-6k91hb0n24moamqap6acuhahv0kie1v4.apps.googleusercontent.com";
+        }
+
         GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
-                .requestIdToken("744209892194-6k91hb0n24moamqap6acuhahv0kie1v4.apps.googleusercontent.com")
+                .requestIdToken(googleClientId)
                 .requestEmail()
                 .build();
         mGoogleSignInClient = GoogleSignIn.getClient(this, gso);
@@ -122,99 +143,129 @@ public class loginActivity extends AppCompatActivity {
             }
         });
 
-        // ==========================================
-        // LISTENERS
-        // ==========================================
-        btnContinue.setOnClickListener(v -> loginUser());
-
-        btnTabSignup.setOnClickListener(v -> goToSignup());
-        tvSignupLink.setOnClickListener(v -> goToSignup());
-
-        tvForgotPassword.setOnClickListener(v -> {
-            Intent intent = new Intent(loginActivity.this, forgotPasswordActivity.class);
-            startActivity(intent);
-        });
     }
-
     private void goToSignup() {
         Intent intent = new Intent(loginActivity.this, signupActivity.class);
         startActivity(intent);
     }
 
     private void loginUser() {
-        // Debug Toast
-        Toast.makeText(this, "Attempting Login...", Toast.LENGTH_SHORT).show();
+        String email = ValidationUtils.trimString(emailInput.getText().toString());
+        String password = ValidationUtils.trimString(passwordInput.getText().toString());
 
-        String email = emailInput.getText().toString().trim();
-        String password = passwordInput.getText().toString().trim();
-
-        if (TextUtils.isEmpty(email)) {
-            emailInput.setError("Email is required");
+        // Validation
+        if (!ValidationUtils.isValidEmail(email)) {
+            emailInput.setError(Constants.ERROR_EMAIL_REQUIRED);
+            emailInput.requestFocus();
             return;
         }
-        if (TextUtils.isEmpty(password)) {
-            passwordInput.setError("Password is required");
+
+        if (!ValidationUtils.isValidPassword(password)) {
+            passwordInput.setError(Constants.ERROR_PASSWORD_TOO_SHORT);
+            passwordInput.requestFocus();
             return;
         }
+
+        LogUtils.d("LoginActivity", "Attempting login for: " + email);
 
         mAuth.signInWithEmailAndPassword(email, password)
                 .addOnCompleteListener(this, task -> {
                     if (task.isSuccessful()) {
+                        LogUtils.d("LoginActivity", "Login successful");
                         navigateToDashboard();
                     } else {
-                        Toast.makeText(loginActivity.this, "Login Failed: " + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
+                        String errorMessage = Constants.ERROR_UNKNOWN;
+                        if (task.getException() != null) {
+                            errorMessage = task.getException().getMessage();
+                            LogUtils.e("LoginActivity", "Login failed", task.getException());
+                        }
+                        Toast.makeText(loginActivity.this, "Login Failed: " + errorMessage, Toast.LENGTH_SHORT).show();
                     }
                 });
     }
-
-    private void signInWithGoogle() {
-        Intent signInIntent = mGoogleSignInClient.getSignInIntent();
-        startActivityForResult(signInIntent, RC_SIGN_IN);
-    }
-
-    private void firebaseAuthWithGoogle(String idToken) {
-        AuthCredential credential = GoogleAuthProvider.getCredential(idToken, null);
-        mAuth.signInWithCredential(credential)
-                .addOnCompleteListener(this, task -> {
-                    if (task.isSuccessful()) {
-                        navigateToDashboard();
-                    } else {
-                        Toast.makeText(loginActivity.this, "Google Auth Failed", Toast.LENGTH_SHORT).show();
-                    }
-                });
-    }
-
-    private void handleFacebookAccessToken(AccessToken token) {
-        AuthCredential credential = FacebookAuthProvider.getCredential(token.getToken());
-        mAuth.signInWithCredential(credential)
-                .addOnCompleteListener(this, task -> {
-                    if (task.isSuccessful()) {
-                        navigateToDashboard();
-                    } else {
-                        Toast.makeText(loginActivity.this, "Facebook Auth Failed", Toast.LENGTH_SHORT).show();
-                    }
-                });
-    }
-
     private void navigateToDashboard() {
-        Toast.makeText(loginActivity.this, "Login Successful!", Toast.LENGTH_SHORT).show();
+        Toast.makeText(loginActivity.this, Constants.SUCCESS_LOGIN, Toast.LENGTH_SHORT).show();
         Intent intent = new Intent(loginActivity.this, dashboardActivity.class);
         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
         startActivity(intent);
         finish();
     }
 
+
+    private void signInWithGoogle() {
+        try {
+            Intent signInIntent = mGoogleSignInClient.getSignInIntent();
+            startActivityForResult(signInIntent, Constants.RC_GOOGLE_SIGN_IN);
+        } catch (Exception e) {
+            LogUtils.e("LoginActivity", "Google sign-in error", e);
+            Toast.makeText(this, "Google Sign-In Error", Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    private void firebaseAuthWithGoogle(String idToken) {
+        if (TextUtils.isEmpty(idToken)) {
+            Toast.makeText(this, "Google authentication failed", Toast.LENGTH_SHORT).show();
+            return;
+        }
+
+        AuthCredential credential = GoogleAuthProvider.getCredential(idToken, null);
+        mAuth.signInWithCredential(credential)
+                .addOnCompleteListener(this, task -> {
+                    if (task.isSuccessful()) {
+                        LogUtils.d("LoginActivity", "Google auth successful");
+                        navigateToDashboard();
+                    } else {
+                        String errorMessage = "Google Auth Failed";
+                        if (task.getException() != null) {
+                            errorMessage = task.getException().getMessage();
+                            LogUtils.e("LoginActivity", "Google auth failed", task.getException());
+                        }
+                        Toast.makeText(loginActivity.this, errorMessage, Toast.LENGTH_SHORT).show();
+                    }
+                });
+    }
+
+
+    private void handleFacebookAccessToken(AccessToken token) {
+        if (token == null || TextUtils.isEmpty(token.getToken())) {
+            Toast.makeText(this, "Facebook authentication failed", Toast.LENGTH_SHORT).show();
+            return;
+        }
+
+        AuthCredential credential = FacebookAuthProvider.getCredential(token.getToken());
+        mAuth.signInWithCredential(credential)
+                .addOnCompleteListener(this, task -> {
+                    if (task.isSuccessful()) {
+                        LogUtils.d("LoginActivity", "Facebook auth successful");
+                        navigateToDashboard();
+                    } else {
+                        String errorMessage = "Facebook Auth Failed";
+                        if (task.getException() != null) {
+                            errorMessage = task.getException().getMessage();
+                            LogUtils.e("LoginActivity", "Facebook auth failed", task.getException());
+                        }
+                        Toast.makeText(loginActivity.this, errorMessage, Toast.LENGTH_SHORT).show();
+                    }
+                });
+    }
+
+
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         mCallbackManager.onActivityResult(requestCode, resultCode, data);
 
-        if (requestCode == RC_SIGN_IN) {
+        if (requestCode == Constants.RC_GOOGLE_SIGN_IN) {
             Task<GoogleSignInAccount> task = GoogleSignIn.getSignedInAccountFromIntent(data);
             try {
                 GoogleSignInAccount account = task.getResult(ApiException.class);
-                firebaseAuthWithGoogle(account.getIdToken());
+                if (account != null) {
+                    firebaseAuthWithGoogle(account.getIdToken());
+                } else {
+                    Toast.makeText(this, "Google Sign-In Failed", Toast.LENGTH_SHORT).show();
+                }
             } catch (ApiException e) {
+                LogUtils.e("LoginActivity", "Google sign-in exception", e);
                 Toast.makeText(this, "Google Sign-In Failed: " + e.getMessage(), Toast.LENGTH_SHORT).show();
             }
         }

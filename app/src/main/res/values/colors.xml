@@ -15,4 +15,47 @@
     <color name="search_bg">#FFFFFF</color>
     <color name="red">#FFFF0000</color>
     <color name="gray">#808080</color>
+    <color name="white_80">#CCFFFFFF</color>
+    <color name="white_70">#B3FFFFFF</color>
+    <color name="text_gray">#8E8E93</color>
+    <color name="primary_blue">#4A90E2</color>
+    <color name="chip_blue">#2C3E6B</color>
+    <color name="divider">#2C2C38</color>
+    <color name="transparent">#00000000</color>
+    
+    <!-- Recommendation Category Colors -->
+    <color name="safe_category">#10B981</color>
+    <color name="target_category">#3B82F6</color>
+    <color name="ambitious_category">#F59E0B</color>
+    <color name="default_category">#6B7280</color>
+
+    <!-- Backgrounds -->
+    <color name="bg_primary">#050810</color>
+    <color name="bg_secondary">#0C1020</color>
+    <color name="bg_tertiary">#111828</color>
+    <color name="bg_elevated">#161F30</color>
+    <color name="card_dark">#1C1C24</color>
+    <color name="surface_dark">#2A2A35</color>
+    <color name="background_dark">#0F0F13</color>
+
+    <!-- Brand -->
+    <color name="blue">#3D7EFF</color>
+    <color name="blue_light">#5B96FF</color>
+    <color name="blue_dim">#1A3D7EFF</color>
+    <color name="purple">#8B5CF6</color>
+    <color name="cyan">#06B6D4</color>
+
+    <!-- Status -->
+    <color name="green">#10B981</color>
+    <color name="amber">#F59E0B</color>
+
+    <!-- Text -->
+    <color name="text_primary">#EEF2FF</color>
+    <color name="text_secondary">#94A3B8</color>
+    <color name="text_dim">#4B5563</color>
+    <!-- Borders -->
+    <color name="border_default">#0FFFFFFF</color>
+    <color name="border_medium">#1AFFFFFF</color>
+    <color name="border_blue">#1A3070</color>
+    <color name="border_green">#1A4030</color>
 </resources>

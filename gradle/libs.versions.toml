@@ -12,6 +12,7 @@ firebaseBom = "32.7.0"
 cardview = "1.0.0"
 firebaseAuth = "24.0.1"
 firebaseDatabase = "22.0.1"
+generativeai = "0.6.0"
 
 [libraries]
 junit = { group = "junit", name = "junit", version.ref = "junit" }
@@ -27,6 +28,8 @@ firebase-bom = { group = "com.google.firebase", name = "firebase-bom", version.r
 cardview = { group = "androidx.cardview", name = "cardview", version.ref = "cardview" }
 firebase-auth = { group = "com.google.firebase", name = "firebase-auth", version.ref = "firebaseAuth" }
 firebase-database = { group = "com.google.firebase", name = "firebase-database", version.ref = "firebaseDatabase" }
+
+generativeai = { group = "com.google.ai.client.generativeai", name = "generativeai", version.ref = "generativeai" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

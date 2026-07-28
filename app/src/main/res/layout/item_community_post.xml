@@ -49,17 +49,20 @@
                 android:id="@+id/tvTimeRole"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="2h ago • Student"
+                android:text="2h ago - Student"
                 android:textColor="#888888"
                 android:textSize="11sp"/>
         </LinearLayout>
 
-        <ImageView
-            android:layout_width="20dp"
-            android:layout_height="20dp"
+        <ImageButton
+            android:id="@+id/btnMore"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
             android:src="@android:drawable/ic_menu_more"
             app:tint="#888888"
             android:rotation="90"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:padding="8dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"/>
 
@@ -143,11 +146,11 @@
 
             <ImageView
                 android:id="@+id/btnShare"
-                android:layout_width="20dp"
-                android:layout_height="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
                 android:src="@android:drawable/ic_menu_share"
-                app:tint="#888888"
-                app:layout_constraintEnd_toEndOf="parent"/>
+                app:layout_constraintEnd_toEndOf="parent"
+                app:tint="#888888" />
 
         </LinearLayout>
 

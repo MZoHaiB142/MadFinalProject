@@ -22,6 +22,22 @@
             android:background="@drawable/gradient_overlay"/>
 
         <TextView
+            android:id="@+id/txtVisaRatio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|start"
+            android:layout_margin="10dp"
+            android:background="@drawable/bg_badge"
+            android:paddingStart="8dp"
+            android:paddingTop="4dp"
+            android:paddingEnd="8dp"
+            android:paddingBottom="4dp"
+            android:text="85% visa ratio"
+            android:textColor="@android:color/white"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+
+        <TextView
             android:id="@+id/txtCountry"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -33,3 +49,4 @@
     </FrameLayout>
 
 </androidx.cardview.widget.CardView>
+
