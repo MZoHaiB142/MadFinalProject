@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent" android:background="#FAFBFE">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="14dp">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="54dp">
+            <ImageButton android:id="@+id/btnBack" android:layout_width="42dp" android:layout_height="42dp" android:layout_centerVertical="true" android:background="?attr/selectableItemBackgroundBorderless" android:contentDescription="Back" android:padding="11dp" android:src="@drawable/ic_arrow_back"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:text="Daily Challenge" android:textColor="#071A48" android:textSize="17sp" android:textStyle="bold"/>
+        </RelativeLayout>
+        <TextView android:layout_width="match_parent" android:layout_height="100dp" android:gravity="center" android:text="🏆" android:textSize="55sp"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center" android:text="Complete today's challenge\nand earn rewards!" android:textColor="#17294D" android:textSize="15sp" android:textStyle="bold"/>
+        <ProgressBar android:id="@+id/challengeProgress" style="?android:attr/progressBarStyleHorizontal" android:layout_width="match_parent" android:layout_height="8dp" android:layout_marginTop="20dp" android:max="100" android:progressTint="#6D4CEB" android:progressBackgroundTint="#E6E2F8"/>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="18dp" android:background="@drawable/bg_test_card" android:orientation="vertical" android:padding="15dp">
+            <TextView android:id="@+id/challengeWords" android:layout_width="match_parent" android:layout_height="48dp" android:gravity="center_vertical" android:text="○  Learn 10 new words" android:textColor="#34425D" android:textStyle="bold"/>
+            <TextView android:id="@+id/challengeQuiz" android:layout_width="match_parent" android:layout_height="48dp" android:gravity="center_vertical" android:text="○  Complete a quiz" android:textColor="#34425D" android:textStyle="bold"/>
+            <TextView android:id="@+id/challengeSpeaking" android:layout_width="match_parent" android:layout_height="48dp" android:gravity="center_vertical" android:text="○  Practice speaking" android:textColor="#34425D" android:textStyle="bold"/>
+            <TextView android:id="@+id/challengeScore" android:layout_width="match_parent" android:layout_height="48dp" android:gravity="center_vertical" android:text="○  Score 90% or above" android:textColor="#34425D" android:textStyle="bold"/>
+        </LinearLayout>
+        <TextView style="@style/PrepSectionTitle" android:text="Rewards" />
+        <TextView android:id="@+id/challengeReward" android:layout_width="match_parent" android:layout_height="72dp" android:background="@drawable/bg_vocabulary_soft" android:gravity="center" android:text="+50 XP     •     +1 Achievement Badge" android:textColor="#5B35DD" android:textStyle="bold"/>
+        <Button android:id="@+id/btnStartChallenge" android:layout_width="match_parent" android:layout_height="52dp" android:layout_marginTop="18dp" android:background="@drawable/bg_purple_button" android:text="Start Challenge" android:textAllCaps="false" android:textColor="#FFFFFF"/>
+        <ProgressBar android:id="@+id/loading" android:layout_width="36dp" android:layout_height="36dp" android:layout_gravity="center_horizontal" android:layout_margin="18dp" android:indeterminateTint="#5B35DD"/>
+    </LinearLayout>
+</ScrollView>

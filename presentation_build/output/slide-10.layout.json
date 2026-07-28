@@ -1,0 +1,1106 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/wfyyh8",
+    "id": "wfyyh8",
+    "slide": 10,
+    "layoutId": "8526bcd9-7b2a-406a-b481-a45662d85af0",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "c2c8cc63-3769-4797-9610-10426558d208",
+    "masterLayoutName": "Master",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "ChatGPT",
+    "colors": {
+      "accent1": "#156082",
+      "accent2": "#E97132",
+      "accent3": "#196B24",
+      "accent4": "#0F9ED5",
+      "accent5": "#A02B93",
+      "accent6": "#4EA72E",
+      "bg1": "#FFFFFF",
+      "bg2": "#000000",
+      "tx1": "#1F1F1F",
+      "tx2": "#FFFFFF",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#0E2841",
+      "lt2": "#E8E8E8",
+      "hlink": "#467886",
+      "folHlink": "#96607D"
+    },
+    "typefaces": [
+      "Helvetica Neue"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "8526bcd9-7b2a-406a-b481-a45662d85af0",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "c2c8cc63-3769-4797-9610-10426558d208",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "c2c8cc63-3769-4797-9610-10426558d208",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/bm1sj6pw",
+      "id": "1",
+      "name": "Slide-Number-Placeholder-1-2",
+      "bbox": [
+        1184.17,
+        659.17,
+        54.5,
+        25.33
+      ],
+      "composeSource": {
+        "run": 1,
+        "path": "0.0"
+      },
+      "geometry": "rect",
+      "text": "10",
+      "textPreview": "10",
+      "resolvedFontSize": 13.33,
+      "resolvedTextStyle": {
+        "anchor": 3,
+        "fontSize": 13.33,
+        "typeface": "Helvetica Neue",
+        "color": "#000000",
+        "alignment": "right",
+        "verticalAlignment": "bottom",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "10"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "10",
+          "resolvedTextStyle": {
+            "anchor": 3,
+            "fontSize": 13.33,
+            "typeface": "Helvetica Neue",
+            "color": "#000000",
+            "alignment": "right",
+            "verticalAlignment": "bottom",
+            "insets": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "10",
+              "anchor": 3,
+              "fontSize": 13.33,
+              "typeface": "Helvetica Neue",
+              "color": "#000000",
+              "alignment": "right",
+              "verticalAlignment": "bottom",
+              "insets": {
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              }
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/wnatsr6h",
+      "id": "2",
+      "name": "Title-2-3",
+      "bbox": [
+        41.33,
+        36.12,
+        1197.33,
+        109.97
+      ],
+      "composeSource": {
+        "run": 1,
+        "path": "0.1"
+      },
+      "geometry": "rect",
+      "text": "User stories: preparation, guidance, and progress",
+      "textPreview": "User stories: preparation, guidance, and progress",
+      "resolvedFontSize": 38.67,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 38.67,
+        "typeface": "Helvetica Neue",
+        "color": "#000000",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "User stories: preparation, guidance, and progress"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "User stories: preparation, guidance, and progress",
+          "resolvedTextStyle": {
+            "anchor": 1,
+            "fontSize": 38.67,
+            "typeface": "Helvetica Neue",
+            "color": "#000000",
+            "alignment": "left",
+            "verticalAlignment": "top",
+            "autoFit": "shrinkText",
+            "insets": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "User stories: preparation, guidance, and progress",
+              "anchor": 1,
+              "fontSize": 38.67,
+              "typeface": "Helvetica Neue",
+              "color": "#000000",
+              "alignment": "left",
+              "verticalAlignment": "top",
+              "autoFit": "shrinkText",
+              "insets": {
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              }
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/xojalw72",
+      "id": "3",
+      "name": "Content-Placeholder-9-4",
+      "bbox": [
+        41.33,
+        213.33,
+        581.33,
+        172.5
+      ],
+      "composeSource": {
+        "run": 1,
+        "path": "0.2"
+      },
+      "geometry": "rect",
+      "text": "Prepare\nAs a student, I want structured IELTS, PTE, SAT, and English lessons with mock tests so that I can improve by skill.",
+      "textPreview": "Prepare | As a student, I want structured IELTS, PTE, SAT, and English lessons with mock tests so that I can improve by skill.",
+      "resolvedFontSize": 32,
+      "resolvedTextStyle": {
+        "fontSize": 32,
+        "typeface": "Helvetica Neue",
+        "color": "#000000",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 4,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Prepare"
+          },
+          {
+            "index": 2,
+            "text": "As a student, I want structured IELTS, PTE,"
+          },
+          {
+            "index": 3,
+            "text": "SAT, and English lessons with mock tests so"
+          },
+          {
+            "index": 4,
+            "text": "that I can improve by skill."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Prepare",
+          "resolvedTextStyle": {
+            "fontSize": 32,
+            "typeface": "Helvetica Neue",
+            "color": "#000000",
+            "alignment": "left",
+            "insets": {
+              "top": 4.8,
+              "right": 9.6,
+              "bottom": 4.8,
+              "left": 9.6
+            }
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Prepare",
+              "fontSize": 32,
+              "typeface": "Helvetica Neue",
+              "color": "#000000",
+              "alignment": "left",
+              "insets": {
+                "top": 4.8,
+                "right": 9.6,
+                "bottom": 4.8,
+                "left": 9.6
+              }
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "As a student, I want structured IELTS, PTE, SAT, and English lessons with mock tests so that I can improve by skill.",
+          "resolvedTextStyle": {
+            "fontSize": 32,
+            "typeface": "Helvetica Neue",
+            "color": "#000000",
+            "alignment": "left",
+            "insets": {
+              "top": 4.8,
+              "right": 9.6,
+              "bottom": 4.8,
+              "left": 9.6
+            }
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "As a student, I want structured IELTS, PTE, SAT, and English lessons with mock tests so that I can improve by skill.",
+              "fontSize": 32,
+              "typeface": "Helvetica Neue",
+              "color": "#000000",
+              "alignment": "left",
+              "insets": {
+                "top": 4.8,
+                "right": 9.6,
+                "bottom": 4.8,
+                "left": 9.6
+              }
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/mh8bmhof",
+      "id": "4",
+      "name": "Content-Placeholder-10-5",
+      "bbox": [
+        656.86,
+        213.33,
+        581.33,
+        172.5
+      ],
+      "composeSource": {
+        "run": 1,
+        "path": "0.3"
+      },
+      "geometry": "rect",
+      "text": "Practice interviews\nAs a student, I want varied visa questions, live transcripts, and structured feedback so that I can answer confidently.",
+      "textPreview": "Practice interviews | As a student, I want varied visa questions, live transcripts, and structured feedback so that I can answer confiden...",
+      "resolvedFontSize": 32,
+      "resolvedTextStyle": {
+        "fontSize": 32,
+        "typeface": "Helvetica Neue",
+        "color": "#000000",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 4,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Practice interviews"
+          },
+          {
+            "index": 2,
+            "text": "As a student, I want varied visa questions,"
+          },
+          {
+            "index": 3,
+            "text": "live transcripts, and structured feedback so"
+          },
+          {
+            "index": 4,
+            "text": "that I can answer confidently."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Practice interviews",
+          "resolvedTextStyle": {
+            "fontSize": 32,
+            "typeface": "Helvetica Neue",
+            "color": "#000000",
+            "alignment": "left",
+            "insets": {
+              "top": 4.8,
+              "right": 9.6,
+              "bottom": 4.8,
+              "left": 9.6
+            }
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Practice interviews",
+              "fontSize": 32,
+              "typeface": "Helvetica Neue",
+              "color": "#000000",
+              "alignment": "left",
+              "insets": {
+                "top": 4.8,
+                "right": 9.6,
+                "bottom": 4.8,
+                "left": 9.6
+              }
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "As a student, I want varied visa questions, live transcripts, and structured feedback so that I can answer confidently.",
+          "resolvedTextStyle": {
+            "fontSize": 32,
+            "typeface": "Helvetica Neue",
+            "color": "#000000",
+            "alignment": "left",
+            "insets": {
+              "top": 4.8,
+              "right": 9.6,
+              "bottom": 4.8,
+              "left": 9.6
+            }
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "As a student, I want varied visa questions, live transcripts, and structured feedback so that I can answer confidently.",
+              "fontSize": 32,
+              "typeface": "Helvetica Neue",
+              "color": "#000000",
+              "alignment": "left",
+              "insets": {
+                "top": 4.8,
+                "right": 9.6,
+                "bottom": 4.8,
+                "left": 9.6
+              }
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ni1sfmpk",
+      "id": "5",
+      "name": "Content-Placeholder-9-6",
+      "bbox": [
+        41.33,
+        421.73,
+        581.33,
+        172.51
+      ],
+      "composeSource": {
+        "run": 1,
+        "path": "0.4"
+      },
+      "geometry": "rect",
+      "text": "Build an application\nAs a student, I want SOP guidance, checklists, and a country roadmap so that I can complete the right steps in sequence.",
+      "textPreview": "Build an application | As a student, I want SOP guidance, checklists, and a country roadmap so that I can complete the right steps in seq...",
+      "resolvedFontSize": 32,
+      "resolvedTextStyle": {
+        "fontSize": 32,
+        "typeface": "Helvetica Neue",
+        "color": "#000000",
+        "alignment": "left",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 4,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Build an application"
+          },
+          {
+            "index": 2,
+            "text": "As a student, I want SOP guidance,"
+          },
+          {
+            "index": 3,
+            "text": "checklists, and a country roadmap so that I"
+          },
+          {
+            "index": 4,
+            "text": "can complete the right steps in sequence."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Build an application",
+          "resolvedTextStyle": {
+            "fontSize": 32,
+            "typeface": "Helvetica Neue",
+            "color": "#000000",
+            "alignment": "left",
+            "autoFit": "shrinkText",
+            "insets": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Build an application",
+              "fontSize": 32,
+              "typeface": "Helvetica Neue",
+              "color": "#000000",
+              "alignment": "left",
+              "autoFit": "shrinkText",
+              "insets": {
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              }
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "As a student, I want SOP guidance, checklists, and a country roadmap so that I can complete the right steps in sequence.",
+          "resolvedTextStyle": {
+            "fontSize": 32,
+            "typeface": "Helvetica Neue",
+            "color": "#000000",
+            "alignment": "left",
+            "autoFit": "shrinkText",
+            "insets": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "As a student, I want SOP guidance, checklists, and a country roadmap so that I can complete the right steps in sequence.",
+              "fontSize": 32,
+              "typeface": "Helvetica Neue",
+              "color": "#000000",
+              "alignment": "left",
+              "autoFit": "shrinkText",
+              "insets": {
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              }
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ojator65",
+      "id": "6",
+      "name": "Content-Placeholder-10-7",
+      "bbox": [
+        656.86,
+        421.73,
+        581.33,
+        172.51
+      ],
+      "composeSource": {
+        "run": 1,
+        "path": "0.5"
+      },
+      "geometry": "rect",
+      "text": "Get support\nAs a student, I want consultant, community, chatbot, and progress views so that help and evidence remain accessible.",
+      "textPreview": "Get support | As a student, I want consultant, community, chatbot, and progress views so that help and evidence remain accessible.",
+      "resolvedFontSize": 32,
+      "resolvedTextStyle": {
+        "fontSize": 32,
+        "typeface": "Helvetica Neue",
+        "color": "#000000",
+        "alignment": "left",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 4,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Get support"
+          },
+          {
+            "index": 2,
+            "text": "As a student, I want consultant, community,"
+          },
+          {
+            "index": 3,
+            "text": "chatbot, and progress views so that help and"
+          },
+          {
+            "index": 4,
+            "text": "evidence remain accessible."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Get support",
+          "resolvedTextStyle": {
+            "fontSize": 32,
+            "typeface": "Helvetica Neue",
+            "color": "#000000",
+            "alignment": "left",
+            "autoFit": "shrinkText",
+            "insets": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Get support",
+              "fontSize": 32,
+              "typeface": "Helvetica Neue",
+              "color": "#000000",
+              "alignment": "left",
+              "autoFit": "shrinkText",
+              "insets": {
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              }
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "As a student, I want consultant, community, chatbot, and progress views so that help and evidence remain accessible.",
+          "resolvedTextStyle": {
+            "fontSize": 32,
+            "typeface": "Helvetica Neue",
+            "color": "#000000",
+            "alignment": "left",
+            "autoFit": "shrinkText",
+            "insets": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "As a student, I want consultant, community, chatbot, and progress views so that help and evidence remain accessible.",
+              "fontSize": 32,
+              "typeface": "Helvetica Neue",
+              "color": "#000000",
+              "alignment": "left",
+              "autoFit": "shrinkText",
+              "insets": {
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              }
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    }
+  ],
+  "composeRuns": [
+    {
+      "index": 1,
+      "frame": {
+        "left": 0,
+        "top": 0,
+        "width": 1280,
+        "height": 720
+      },
+      "baseUnit": 1,
+      "root": {
+        "path": "0",
+        "kind": "layers",
+        "name": "codex-grid-layout-library#slide-13",
+        "requestedSize": {
+          "width": {
+            "mode": "fill",
+            "value": 1
+          },
+          "height": {
+            "mode": "fill",
+            "value": 1
+          }
+        },
+        "intrinsicSize": {
+          "width": 1238.67,
+          "height": 684.5
+        },
+        "frame": {
+          "left": 0,
+          "top": 0,
+          "width": 1280,
+          "height": 720
+        },
+        "children": [
+          {
+            "path": "0.0",
+            "kind": "text",
+            "name": "Slide-Number-Placeholder-1-2",
+            "position": {
+              "left": 1184.17,
+              "top": 659.17
+            },
+            "requestedSize": {
+              "width": {
+                "mode": "fixed",
+                "value": 54.5
+              },
+              "height": {
+                "mode": "fixed",
+                "value": 25.33
+              }
+            },
+            "intrinsicSize": {
+              "width": 54.5,
+              "height": 25.33
+            },
+            "frame": {
+              "left": 1184.17,
+              "top": 659.17,
+              "width": 54.5,
+              "height": 25.33
+            },
+            "snappedFrame": {
+              "left": 1184.17,
+              "top": 659.17,
+              "width": 54.5,
+              "height": 25.33
+            },
+            "children": [],
+            "text": "10",
+            "transform": "none",
+            "element": {
+              "aid": "sh/bm1sj6pw",
+              "id": "1",
+              "kind": "shape"
+            }
+          },
+          {
+            "path": "0.1",
+            "kind": "text",
+            "name": "Title-2-3",
+            "position": {
+              "left": 41.33,
+              "top": 36.12
+            },
+            "requestedSize": {
+              "width": {
+                "mode": "fixed",
+                "value": 1197.33
+              },
+              "height": {
+                "mode": "fixed",
+                "value": 109.97
+              }
+            },
+            "intrinsicSize": {
+              "width": 1197.33,
+              "height": 109.97
+            },
+            "frame": {
+              "left": 41.33,
+              "top": 36.12,
+              "width": 1197.33,
+              "height": 109.97
+            },
+            "snappedFrame": {
+              "left": 41.33,
+              "top": 36.12,
+              "width": 1197.33,
+              "height": 109.97
+            },
+            "children": [],
+            "text": "User stories: preparation, guidance, and progress",
+            "transform": "none",
+            "element": {
+              "aid": "sh/wnatsr6h",
+              "id": "2",
+              "kind": "shape"
+            }
+          },
+          {
+            "path": "0.2",
+            "kind": "text",
+            "name": "Content-Placeholder-9-4",
+            "position": {
+              "left": 41.33,
+              "top": 213.33
+            },
+            "requestedSize": {
+              "width": {
+                "mode": "fixed",
+                "value": 581.33
+              },
+              "height": {
+                "mode": "fixed",
+                "value": 172.5
+              }
+            },
+            "intrinsicSize": {
+              "width": 581.33,
+              "height": 172.5
+            },
+            "frame": {
+              "left": 41.33,
+              "top": 213.33,
+              "width": 581.33,
+              "height": 172.5
+            },
+            "snappedFrame": {
+              "left": 41.33,
+              "top": 213.33,
+              "width": 581.33,
+              "height": 172.5
+            },
+            "children": [],
+            "text": "PrepareAs a student, I want structured IELTS, PTE, SAT, and English lessons with mock tests so that I can improve by skill.",
+            "transform": "none",
+            "element": {
+              "aid": "sh/xojalw72",
+              "id": "3",
+              "kind": "shape"
+            }
+          },
+          {
+            "path": "0.3",
+            "kind": "text",
+            "name": "Content-Placeholder-10-5",
+            "position": {
+              "left": 656.86,
+              "top": 213.33
+            },
+            "requestedSize": {
+              "width": {
+                "mode": "fixed",
+                "value": 581.33
+              },
+              "height": {
+                "mode": "fixed",
+                "value": 172.5
+              }
+            },
+            "intrinsicSize": {
+              "width": 581.33,
+              "height": 172.5
+            },
+            "frame": {
+              "left": 656.86,
+              "top": 213.33,
+              "width": 581.33,
+              "height": 172.5
+            },
+            "snappedFrame": {
+              "left": 656.86,
+              "top": 213.33,
+              "width": 581.33,
+              "height": 172.5
+            },
+            "children": [],
+            "text": "Practice interviewsAs a student, I want varied visa questions, live transcripts, and structured feedback so that I can answer confidently.",
+            "transform": "none",
+            "element": {
+              "aid": "sh/mh8bmhof",
+              "id": "4",
+              "kind": "shape"
+            }
+          },
+          {
+            "path": "0.4",
+            "kind": "text",
+            "name": "Content-Placeholder-9-6",
+            "position": {
+              "left": 41.33,
+              "top": 421.73
+            },
+            "requestedSize": {
+              "width": {
+                "mode": "fixed",
+                "value": 581.33
+              },
+              "height": {
+                "mode": "fixed",
+                "value": 172.51
+              }
+            },
+            "intrinsicSize": {
+              "width": 581.33,
+              "height": 172.51
+            },
+            "frame": {
+              "left": 41.33,
+              "top": 421.73,
+              "width": 581.33,
+              "height": 172.51
+            },
+            "snappedFrame": {
+              "left": 41.33,
+              "top": 421.73,
+              "width": 581.33,
+              "height": 172.51
+            },
+            "children": [],
+            "text": "Build an applicationAs a student, I want SOP guidance, checklists, and a country roadmap so that I can complete the right steps in sequence.",
+            "transform": "none",
+            "element": {
+              "aid": "sh/ni1sfmpk",
+              "id": "5",
+              "kind": "shape"
+            }
+          },
+          {
+            "path": "0.5",
+            "kind": "text",
+            "name": "Content-Placeholder-10-7",
+            "position": {
+              "left": 656.86,
+              "top": 421.73
+            },
+            "requestedSize": {
+              "width": {
+                "mode": "fixed",
+                "value": 581.33
+              },
+              "height": {
+                "mode": "fixed",
+                "value": 172.51
+              }
+            },
+            "intrinsicSize": {
+              "width": 581.33,
+              "height": 172.51
+            },
+            "frame": {
+              "left": 656.86,
+              "top": 421.73,
+              "width": 581.33,
+              "height": 172.51
+            },
+            "snappedFrame": {
+              "left": 656.86,
+              "top": 421.73,
+              "width": 581.33,
+              "height": 172.51
+            },
+            "children": [],
+            "text": "Get supportAs a student, I want consultant, community, chatbot, and progress views so that help and evidence remain accessible.",
+            "transform": "none",
+            "element": {
+              "aid": "sh/ojator65",
+              "id": "6",
+              "kind": "shape"
+            }
+          }
+        ],
+        "padding": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        },
+        "alignItems": "stretch",
+        "justifyItems": "stretch",
+        "contentFrame": {
+          "left": 0,
+          "top": 0,
+          "width": 1280,
+          "height": 720
+        },
+        "items": [
+          {
+            "path": "0.0",
+            "frame": {
+              "left": 1184.17,
+              "top": 659.17,
+              "width": 54.5,
+              "height": 25.33
+            }
+          },
+          {
+            "path": "0.1",
+            "frame": {
+              "left": 41.33,
+              "top": 36.12,
+              "width": 1197.33,
+              "height": 109.97
+            }
+          },
+          {
+            "path": "0.2",
+            "frame": {
+              "left": 41.33,
+              "top": 213.33,
+              "width": 581.33,
+              "height": 172.5
+            }
+          },
+          {
+            "path": "0.3",
+            "frame": {
+              "left": 656.86,
+              "top": 213.33,
+              "width": 581.33,
+              "height": 172.5
+            }
+          },
+          {
+            "path": "0.4",
+            "frame": {
+              "left": 41.33,
+              "top": 421.73,
+              "width": 581.33,
+              "height": 172.51
+            }
+          },
+          {
+            "path": "0.5",
+            "frame": {
+              "left": 656.86,
+              "top": 421.73,
+              "width": 581.33,
+              "height": 172.51
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

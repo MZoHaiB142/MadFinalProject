@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#FAFBFE">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="14dp">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="54dp">
+            <ImageButton android:id="@+id/btnBack" android:layout_width="42dp" android:layout_height="42dp" android:layout_centerVertical="true" android:background="?attr/selectableItemBackgroundBorderless" android:contentDescription="Back" android:padding="11dp" android:src="@drawable/ic_arrow_back"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:text="Fill in the Blank" android:textColor="#071A48" android:textSize="17sp" android:textStyle="bold"/>
+        </RelativeLayout>
+        <TextView android:id="@+id/fillCounter" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Question 0 / 0" android:textColor="#52617C" android:textStyle="bold"/>
+        <ProgressBar android:id="@+id/fillProgress" style="?android:attr/progressBarStyleHorizontal" android:layout_width="match_parent" android:layout_height="7dp" android:layout_marginTop="8dp" android:max="100" android:progressTint="#6D4CEB" android:progressBackgroundTint="#E6E2F8"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="Choose the correct word." android:textColor="#748096" android:textSize="12sp"/>
+        <TextView android:id="@+id/fillSentence" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:background="@drawable/bg_vocabulary_soft" android:gravity="center_vertical" android:lineSpacingExtra="6dp" android:minHeight="115dp" android:padding="18dp" android:textColor="#17294D" android:textSize="17sp" android:textStyle="bold"/>
+        <LinearLayout android:id="@+id/fillOptions" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="14dp" android:orientation="vertical"/>
+        <TextView android:id="@+id/fillFeedback" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:padding="14dp" android:textSize="12sp" android:visibility="gone"/>
+        <Button android:id="@+id/btnFillSubmit" android:layout_width="match_parent" android:layout_height="52dp" android:layout_marginTop="15dp" android:background="@drawable/bg_purple_button" android:enabled="false" android:text="Submit" android:textAllCaps="false" android:textColor="#FFFFFF"/>
+        <ProgressBar android:id="@+id/loading" android:layout_width="36dp" android:layout_height="36dp" android:layout_gravity="center_horizontal" android:layout_margin="20dp" android:indeterminateTint="#5B35DD"/>
+    </LinearLayout>
+</ScrollView>

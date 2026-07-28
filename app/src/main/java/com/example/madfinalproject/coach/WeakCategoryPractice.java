@@ -1,0 +1,3 @@
+package com.example.madfinalproject.coach;
+import com.example.madfinalproject.models.VisaInterviewQuestion; import com.example.madfinalproject.repository.VisaInterviewRepository; import com.google.android.gms.tasks.Task; import java.util.ArrayList; import java.util.List;
+public final class WeakCategoryPractice { public Task<List<VisaInterviewQuestion>> create(String country,List<String>weak){return VisaInterviewRepository.getInstance().getQuestionsByCountry(country).continueWith(task->{if(!task.isSuccessful())throw task.getException();List<VisaInterviewQuestion>result=new ArrayList<>();for(VisaInterviewQuestion q:task.getResult())for(String category:weak)if(q.getCategory().equalsIgnoreCase(category)){result.add(q);break;}return result;});} }

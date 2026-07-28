@@ -1,0 +1,3 @@
+package com.example.madfinalproject.coach;
+import com.example.madfinalproject.ai.models.AIEvaluationResponse;
+public final class RealTimeCoach { private RealTimeCoach(){} public static String feedback(AIEvaluationResponse r){String strength=r.getScores().getConfidence()>=14?"Good confidence.":r.getScores().getGrammar()>=14?"Good grammar.":"Your answer addresses the question.";String weakness=r.getMissingKeywords().isEmpty()?"Add one more specific supporting detail.":"Some important points are missing.";String improvement=!r.getFeedback().isEmpty()?r.getFeedback().get(0):"Connect your answer clearly to your study and career plan.";return "Strength: "+strength+"\nWeakness: "+weakness+"\nImprove: "+improvement;}}

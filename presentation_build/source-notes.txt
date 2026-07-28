@@ -1,0 +1,21 @@
+AbroadIQ presentation source register
+
+Primary project sources
+- E:/FYP/Abroadiq Project Proposal.docx
+- E:/Mad/app/src/main/java/com/example/madfinalproject
+- E:/Mad/app/src/main/res/layout
+- E:/Mad/app/src/main/AndroidManifest.xml
+- E:/Mad/app/build.gradle.kts
+- E:/Mad/.git
+- https://github.com/MZoHaiB142/MadFinalProject
+
+Competitor sources
+- https://yocket.com/
+- https://www.applyboard.com/
+- https://www.idp.com/
+- https://ielts.magoosh.com/
+
+Important integrity notes
+- The sprint grouping in the deck is a reconstruction from the proposal and current codebase. It must be aligned with the actual Jira sprint data before presentation.
+- The current local Git history exposed one committed author during the 2026-07-28 audit. Do not claim all-member contribution evidence until GitHub shows genuine commits from each member.
+- AbroadIQ is an Android Native product. Its offline/local fallback is a tested APK or Android Studio emulator/physical-device build. A separate localhost web surface is required only if the rubric explicitly demands a browser URL.

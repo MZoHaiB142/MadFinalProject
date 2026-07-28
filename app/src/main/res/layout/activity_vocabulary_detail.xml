@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFBFE">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="14dp">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="54dp">
+            <ImageButton android:id="@+id/btnBack" android:layout_width="42dp" android:layout_height="42dp" android:layout_centerVertical="true" android:background="?attr/selectableItemBackgroundBorderless" android:contentDescription="Back" android:padding="11dp" android:src="@drawable/ic_arrow_back"/>
+            <TextView android:id="@+id/headerTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:text="Word Details" android:textColor="#071A48" android:textSize="16sp" android:textStyle="bold"/>
+            <TextView android:id="@+id/btnBookmark" android:layout_width="42dp" android:layout_height="42dp" android:layout_alignParentEnd="true" android:layout_centerVertical="true" android:gravity="center" android:text="☆" android:textColor="#5B35DD" android:textSize="27sp"/>
+        </RelativeLayout>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/bg_vocabulary_soft" android:orientation="vertical" android:padding="17dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_vertical" android:orientation="horizontal">
+                <TextView android:id="@+id/detailWord" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Word" android:textColor="#5B35DD" android:textSize="29sp" android:textStyle="bold"/>
+                <TextView android:id="@+id/btnSpeak" android:layout_width="46dp" android:layout_height="46dp" android:background="@drawable/bg_vocabulary_gradient" android:gravity="center" android:text="🔊" android:textSize="18sp"/>
+            </LinearLayout>
+            <TextView android:id="@+id/detailPronunciation" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:textColor="#52617C" android:textSize="12sp"/>
+            <TextView android:id="@+id/detailBadges" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:textColor="#7C3AED" android:textSize="11sp" android:textStyle="bold"/>
+        </LinearLayout>
+
+        <TextView style="@style/PrepSectionTitle" android:text="Meaning" />
+        <TextView android:id="@+id/detailMeaning" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/bg_test_card" android:lineSpacingExtra="4dp" android:padding="14dp" android:textColor="#34425D" android:textSize="12sp"/>
+        <TextView style="@style/PrepSectionTitle" android:text="Synonyms &amp; Antonyms" />
+        <TextView android:id="@+id/detailRelations" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/bg_test_card" android:lineSpacingExtra="5dp" android:padding="14dp" android:textColor="#34425D" android:textSize="12sp"/>
+        <TextView style="@style/PrepSectionTitle" android:text="Examples" />
+        <TextView android:id="@+id/detailExamples" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/bg_test_card" android:lineSpacingExtra="5dp" android:padding="14dp" android:textColor="#34425D" android:textSize="12sp"/>
+        <TextView style="@style/PrepSectionTitle" android:text="Usage Notes" />
+        <TextView android:id="@+id/detailUsage" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/bg_vocabulary_soft" android:lineSpacingExtra="5dp" android:padding="14dp" android:textColor="#34425D" android:textSize="12sp"/>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="18dp" android:layout_marginBottom="20dp" android:orientation="horizontal">
+            <Button android:id="@+id/btnPractice" android:layout_width="0dp" android:layout_height="52dp" android:layout_marginEnd="6dp" android:layout_weight="1" android:background="@drawable/bg_btn_outline" android:text="Practice" android:textAllCaps="false" android:textColor="#5B35DD"/>
+            <Button android:id="@+id/btnNextWord" android:layout_width="0dp" android:layout_height="52dp" android:layout_marginStart="6dp" android:layout_weight="1" android:background="@drawable/bg_purple_button" android:text="Next Word →" android:textAllCaps="false" android:textColor="#FFFFFF"/>
+        </LinearLayout>
+        <ProgressBar android:id="@+id/loading" android:layout_width="36dp" android:layout_height="36dp" android:layout_gravity="center_horizontal" android:indeterminateTint="#5B35DD"/>
+        <TextView android:id="@+id/errorText" android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center" android:padding="20dp" android:textColor="#D32F2F" android:visibility="gone"/>
+    </LinearLayout>
+</ScrollView>

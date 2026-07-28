@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".LiveConsultantActivity">
+
+    <!-- â”€â”€ Top Bar â”€â”€ -->
+    <include
+        android:id="@+id/my_custom_topbar"
+        layout="@layout/layout_topbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- â”€â”€ Header Section â”€â”€ -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/headerContainer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingTop="14dp"
+        android:paddingBottom="16dp"
+        app:layout_constraintTop_toBottomOf="@id/my_custom_topbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:id="@+id/tvHeaderTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Live Consultants"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#1A1A2E"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/btnChatList" />
+
+        <!-- Chat List button -->
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/btnChatList"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@android:drawable/stat_notify_chat"
+            android:background="@drawable/bg_icon_btn_light"
+            android:padding="8dp"
+            android:tint="#1976D2"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/tvHeaderTitle" />
+
+        <TextView
+            android:id="@+id/tvUnreadBadge"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:text="1"
+            android:textColor="#FFFFFF"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="@drawable/bg_unread_badge_blue"
+            android:visibility="gone"
+            app:layout_constraintTop_toTopOf="@id/btnChatList"
+            app:layout_constraintEnd_toEndOf="@id/btnChatList" />
+
+        <!-- Search Bar -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/searchContainer"
+            android:layout_width="0dp"
+            android:layout_height="46dp"
+            android:background="@drawable/bg_search_bar"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@id/tvHeaderTitle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@android:drawable/ic_menu_search"
+                android:layout_marginStart="14dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:tint="#999999" />
+
+            <EditText
+                android:id="@+id/etSearchConsultant"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:hint="Search experts..."
+                android:textColorHint="#AAAAAA"
+                android:textColor="#1A1A2E"
+                android:textSize="14sp"
+                android:background="@null"
+                android:paddingStart="40dp"
+                android:paddingEnd="14dp"
+                android:inputType="text"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- Thin Divider -->
+    <View
+        android:id="@+id/dividerHeader"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#F0F0F0"
+        app:layout_constraintTop_toBottomOf="@id/headerContainer" />
+
+    <!-- â”€â”€ Loading indicator â”€â”€ -->
+    <ProgressBar
+        android:id="@+id/progressLoading"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:indeterminateTint="#1976D2"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/dividerHeader"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- â”€â”€ Empty state â”€â”€ -->
+    <LinearLayout
+        android:id="@+id/layoutEmpty"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="32dp"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/dividerHeader"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Search"
+            android:textSize="40sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No consultants found"
+            android:textColor="#1A1A2E"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="12dp" />
+    </LinearLayout>
+
+    <!-- â”€â”€ Main Consultants List â”€â”€ -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvConsultants"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:clipToPadding="false"
+        android:paddingBottom="20dp"
+        android:overScrollMode="never"
+        app:layout_constraintTop_toBottomOf="@id/dividerHeader"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:listitem="@layout/item_consultant" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

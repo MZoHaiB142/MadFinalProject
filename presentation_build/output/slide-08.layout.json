@@ -1,0 +1,1834 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/3t8zor",
+    "id": "3t8zor",
+    "slide": 8,
+    "layoutId": "8526bcd9-7b2a-406a-b481-a45662d85af0",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "c2c8cc63-3769-4797-9610-10426558d208",
+    "masterLayoutName": "Master",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "ChatGPT",
+    "colors": {
+      "accent1": "#156082",
+      "accent2": "#E97132",
+      "accent3": "#196B24",
+      "accent4": "#0F9ED5",
+      "accent5": "#A02B93",
+      "accent6": "#4EA72E",
+      "bg1": "#FFFFFF",
+      "bg2": "#000000",
+      "tx1": "#1F1F1F",
+      "tx2": "#FFFFFF",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#0E2841",
+      "lt2": "#E8E8E8",
+      "hlink": "#467886",
+      "folHlink": "#96607D"
+    },
+    "typefaces": [
+      "Helvetica Neue"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "8526bcd9-7b2a-406a-b481-a45662d85af0",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "c2c8cc63-3769-4797-9610-10426558d208",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "c2c8cc63-3769-4797-9610-10426558d208",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/mhkfqd8z",
+      "id": "1",
+      "name": "Slide-Number-Placeholder-3-2",
+      "bbox": [
+        1184.18,
+        659.24,
+        54.48,
+        25.33
+      ],
+      "composeSource": {
+        "run": 1,
+        "path": "0.0"
+      },
+      "geometry": "rect",
+      "text": "08",
+      "textPreview": "08",
+      "resolvedFontSize": 13.33,
+      "resolvedTextStyle": {
+        "anchor": 3,
+        "fontSize": 13.33,
+        "typeface": "Helvetica Neue",
+        "color": "#000000",
+        "alignment": "right",
+        "verticalAlignment": "bottom",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "08"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "08",
+          "resolvedTextStyle": {
+            "anchor": 3,
+            "fontSize": 13.33,
+            "typeface": "Helvetica Neue",
+            "color": "#000000",
+            "alignment": "right",
+            "verticalAlignment": "bottom",
+            "insets": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "08",
+              "anchor": 3,
+              "fontSize": 13.33,
+              "typeface": "Helvetica Neue",
+              "color": "#000000",
+              "alignment": "right",
+              "verticalAlignment": "bottom",
+              "insets": {
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              }
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/94be1s7q",
+      "id": "2",
+      "name": "Title-10-3",
+      "bbox": [
+        41.33,
+        36.12,
+        1197.33,
+        109.97
+      ],
+      "composeSource": {
+        "run": 1,
+        "path": "0.1"
+      },
+      "geometry": "rect",
+      "text": "Product backlog: epics",
+      "textPreview": "Product backlog: epics",
+      "resolvedFontSize": 38.67,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 38.67,
+        "typeface": "Helvetica Neue",
+        "color": "#000000",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Product backlog: epics"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Product backlog: epics",
+          "resolvedTextStyle": {
+            "anchor": 1,
+            "fontSize": 38.67,
+            "typeface": "Helvetica Neue",
+            "color": "#000000",
+            "alignment": "left",
+            "verticalAlignment": "top",
+            "autoFit": "shrinkText",
+            "insets": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Product backlog: epics",
+              "anchor": 1,
+              "fontSize": 38.67,
+              "typeface": "Helvetica Neue",
+              "color": "#000000",
+              "alignment": "left",
+              "verticalAlignment": "top",
+              "autoFit": "shrinkText",
+              "insets": {
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              }
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/832xsnq5",
+      "id": "3",
+      "name": "Content-Placeholder-15-4",
+      "bbox": [
+        41.33,
+        436.86,
+        272.54,
+        148.62
+      ],
+      "composeSource": {
+        "run": 1,
+        "path": "0.2"
+      },
+      "geometry": "rect",
+      "text": "E5 · Visa interview\nCountry topics, dynamic sessions, speech, evaluation, and reports.",
+      "textPreview": "E5 · Visa interview | Country topics, dynamic sessions, speech, evaluation, and reports.",
+      "resolvedFontSize": 21.33,
+      "resolvedTextStyle": {
+        "fontSize": 21.33,
+        "typeface": "Helvetica Neue",
+        "color": "#000000",
+        "alignment": "left",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 4,
+        "lines": [
+          {
+            "index": 1,
+            "text": "E5 · Visa interview"
+          },
+          {
+            "index": 2,
+            "text": "Country topics, dynamic"
+          },
+          {
+            "index": 3,
+            "text": "sessions, speech, evaluation,"
+          },
+          {
+            "index": 4,
+            "text": "and reports."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "E5 · Visa interview",
+          "resolvedTextStyle": {
+            "fontSize": 21.33,
+            "typeface": "Helvetica Neue",
+            "color": "#000000",
+            "alignment": "left",
+            "autoFit": "none",
+            "insets": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "E5 · Visa interview",
+              "fontSize": 21.33,
+              "typeface": "Helvetica Neue",
+              "color": "#000000",
+              "alignment": "left",
+              "autoFit": "none",
+              "insets": {
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              }
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "Country topics, dynamic sessions, speech, evaluation, and reports.",
+          "resolvedTextStyle": {
+            "fontSize": 21.33,
+            "typeface": "Helvetica Neue",
+            "color": "#000000",
+            "alignment": "left",
+            "autoFit": "none",
+            "insets": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Country topics, dynamic sessions, speech, evaluation, and reports.",
+              "fontSize": 21.33,
+              "typeface": "Helvetica Neue",
+              "color": "#000000",
+              "alignment": "left",
+              "autoFit": "none",
+              "insets": {
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              }
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ze9wvip8",
+      "id": "4",
+      "name": "Text-Placeholder-16-5",
+      "bbox": [
+        350.13,
+        436.86,
+        272.54,
+        148.62
+      ],
+      "composeSource": {
+        "run": 1,
+        "path": "0.3"
+      },
+      "geometry": "rect",
+      "text": "E6 · SOP & documents\nProfile intake, SOP generation, editing, and document guidance.",
+      "textPreview": "E6 · SOP & documents | Profile intake, SOP generation, editing, and document guidance.",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "Helvetica Neue",
+        "color": "#000000",
+        "alignment": "left",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 4,
+        "lines": [
+          {
+            "index": 1,
+            "text": "E6 · SOP & documents"
+          },
+          {
+            "index": 2,
+            "text": "Profile intake, SOP"
+          },
+          {
+            "index": 3,
+            "text": "generation, editing, and"
+          },
+          {
+            "index": 4,
+            "text": "document guidance."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "E6 · SOP & documents",
+          "resolvedTextStyle": {
+            "fontSize": 24,
+            "typeface": "Helvetica Neue",
+            "color": "#000000",
+            "alignment": "left",
+            "autoFit": "none",
+            "insets": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "E6 · SOP & documents",
+              "fontSize": 24,
+              "typeface": "Helvetica Neue",
+              "color": "#000000",
+              "alignment": "left",
+              "autoFit": "none",
+              "insets": {
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              }
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "Profile intake, SOP generation, editing, and document guidance.",
+          "resolvedTextStyle": {
+            "fontSize": 24,
+            "typeface": "Helvetica Neue",
+            "color": "#000000",
+            "alignment": "left",
+            "autoFit": "none",
+            "insets": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Profile intake, SOP generation, editing, and document guidance.",
+              "fontSize": 24,
+              "typeface": "Helvetica Neue",
+              "color": "#000000",
+              "alignment": "left",
+              "autoFit": "none",
+              "insets": {
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              }
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/yd0fmd8n",
+      "id": "5",
+      "name": "Content-Placeholder-17-6",
+      "bbox": [
+        657.68,
+        436.86,
+        272.54,
+        148.62
+      ],
+      "composeSource": {
+        "run": 1,
+        "path": "0.4"
+      },
+      "geometry": "rect",
+      "text": "E7 · Roadmap & experts\nMilestones, consultant chat/call, and application guidance.",
+      "textPreview": "E7 · Roadmap & experts | Milestones, consultant chat/call, and application guidance.",
+      "resolvedFontSize": 21.33,
+      "resolvedTextStyle": {
+        "fontSize": 21.33,
+        "typeface": "Helvetica Neue",
+        "color": "#000000",
+        "alignment": "left",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 4,
+        "lines": [
+          {
+            "index": 1,
+            "text": "E7 · Roadmap & experts"
+          },
+          {
+            "index": 2,
+            "text": "Milestones, consultant"
+          },
+          {
+            "index": 3,
+            "text": "chat/call, and application"
+          },
+          {
+            "index": 4,
+            "text": "guidance."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "E7 · Roadmap & experts",
+          "resolvedTextStyle": {
+            "fontSize": 21.33,
+            "typeface": "Helvetica Neue",
+            "color": "#000000",
+            "alignment": "left",
+            "autoFit": "none",
+            "insets": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "E7 · Roadmap & experts",
+              "fontSize": 21.33,
+              "typeface": "Helvetica Neue",
+              "color": "#000000",
+              "alignment": "left",
+              "autoFit": "none",
+              "insets": {
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              }
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "Milestones, consultant chat/call, and application guidance.",
+          "resolvedTextStyle": {
+            "fontSize": 21.33,
+            "typeface": "Helvetica Neue",
+            "color": "#000000",
+            "alignment": "left",
+            "autoFit": "none",
+            "insets": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Milestones, consultant chat/call, and application guidance.",
+              "fontSize": 21.33,
+              "typeface": "Helvetica Neue",
+              "color": "#000000",
+              "alignment": "left",
+              "autoFit": "none",
+              "insets": {
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              }
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/lgrex87e",
+      "id": "6",
+      "name": "Text-Placeholder-18-7",
+      "bbox": [
+        966.48,
+        436.86,
+        272.54,
+        148.62
+      ],
+      "composeSource": {
+        "run": 1,
+        "path": "0.5"
+      },
+      "geometry": "rect",
+      "text": "E8 · Community & insights\nPosts, comments, chatbot, dashboards, notifications, analytics.",
+      "textPreview": "E8 · Community & insights | Posts, comments, chatbot, dashboards, notifications, analytics.",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "Helvetica Neue",
+        "color": "#000000",
+        "alignment": "left",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 4,
+        "lines": [
+          {
+            "index": 1,
+            "text": "E8 · Community & insights"
+          },
+          {
+            "index": 2,
+            "text": "Posts, comments, chatbot,"
+          },
+          {
+            "index": 3,
+            "text": "dashboards, notifications,"
+          },
+          {
+            "index": 4,
+            "text": "analytics."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "E8 · Community & insights",
+          "resolvedTextStyle": {
+            "fontSize": 24,
+            "typeface": "Helvetica Neue",
+            "color": "#000000",
+            "alignment": "left",
+            "autoFit": "none",
+            "insets": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "E8 · Community & insights",
+              "fontSize": 24,
+              "typeface": "Helvetica Neue",
+              "color": "#000000",
+              "alignment": "left",
+              "autoFit": "none",
+              "insets": {
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              }
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "Posts, comments, chatbot, dashboards, notifications, analytics.",
+          "resolvedTextStyle": {
+            "fontSize": 24,
+            "typeface": "Helvetica Neue",
+            "color": "#000000",
+            "alignment": "left",
+            "autoFit": "none",
+            "insets": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Posts, comments, chatbot, dashboards, notifications, analytics.",
+              "fontSize": 24,
+              "typeface": "Helvetica Neue",
+              "color": "#000000",
+              "alignment": "left",
+              "autoFit": "none",
+              "insets": {
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              }
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/kfixonqt",
+      "id": "7",
+      "name": "Content-Placeholder-15-8",
+      "bbox": [
+        41.33,
+        231.82,
+        272.54,
+        148.62
+      ],
+      "composeSource": {
+        "run": 1,
+        "path": "0.6"
+      },
+      "geometry": "rect",
+      "text": "E1 · Identity & profile\nAuthentication, qualifications, goals, budget, and profile completion.",
+      "textPreview": "E1 · Identity & profile | Authentication, qualifications, goals, budget, and profile completion.",
+      "resolvedFontSize": 21.33,
+      "resolvedTextStyle": {
+        "fontSize": 21.33,
+        "typeface": "Helvetica Neue",
+        "color": "#000000",
+        "alignment": "left",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 4,
+        "lines": [
+          {
+            "index": 1,
+            "text": "E1 · Identity & profile"
+          },
+          {
+            "index": 2,
+            "text": "Authentication, qualifications,"
+          },
+          {
+            "index": 3,
+            "text": "goals, budget, and profile"
+          },
+          {
+            "index": 4,
+            "text": "completion."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "E1 · Identity & profile",
+          "resolvedTextStyle": {
+            "fontSize": 21.33,
+            "typeface": "Helvetica Neue",
+            "color": "#000000",
+            "alignment": "left",
+            "autoFit": "none",
+            "insets": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "E1 · Identity & profile",
+              "fontSize": 21.33,
+              "typeface": "Helvetica Neue",
+              "color": "#000000",
+              "alignment": "left",
+              "autoFit": "none",
+              "insets": {
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              }
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "Authentication, qualifications, goals, budget, and profile completion.",
+          "resolvedTextStyle": {
+            "fontSize": 21.33,
+            "typeface": "Helvetica Neue",
+            "color": "#000000",
+            "alignment": "left",
+            "autoFit": "none",
+            "insets": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Authentication, qualifications, goals, budget, and profile completion.",
+              "fontSize": 21.33,
+              "typeface": "Helvetica Neue",
+              "color": "#000000",
+              "alignment": "left",
+              "autoFit": "none",
+              "insets": {
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              }
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/jadg72ps",
+      "id": "8",
+      "name": "Text-Placeholder-16-9",
+      "bbox": [
+        350.13,
+        231.82,
+        272.54,
+        148.62
+      ],
+      "composeSource": {
+        "run": 1,
+        "path": "0.7"
+      },
+      "geometry": "rect",
+      "text": "E2 · Discovery & fit\nUniversities, programs, costs, filters, recommendations, eligibility.",
+      "textPreview": "E2 · Discovery & fit | Universities, programs, costs, filters, recommendations, eligibility.",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "Helvetica Neue",
+        "color": "#000000",
+        "alignment": "left",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 5,
+        "lines": [
+          {
+            "index": 1,
+            "text": "E2 · Discovery & fit"
+          },
+          {
+            "index": 2,
+            "text": "Universities, programs,"
+          },
+          {
+            "index": 3,
+            "text": "costs, filters,"
+          },
+          {
+            "index": 4,
+            "text": "recommendations,"
+          },
+          {
+            "index": 5,
+            "text": "eligibility."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "E2 · Discovery & fit",
+          "resolvedTextStyle": {
+            "fontSize": 24,
+            "typeface": "Helvetica Neue",
+            "color": "#000000",
+            "alignment": "left",
+            "autoFit": "none",
+            "insets": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "E2 · Discovery & fit",
+              "fontSize": 24,
+              "typeface": "Helvetica Neue",
+              "color": "#000000",
+              "alignment": "left",
+              "autoFit": "none",
+              "insets": {
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              }
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "Universities, programs, costs, filters, recommendations, eligibility.",
+          "resolvedTextStyle": {
+            "fontSize": 24,
+            "typeface": "Helvetica Neue",
+            "color": "#000000",
+            "alignment": "left",
+            "autoFit": "none",
+            "insets": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Universities, programs, costs, filters, recommendations, eligibility.",
+              "fontSize": 24,
+              "typeface": "Helvetica Neue",
+              "color": "#000000",
+              "alignment": "left",
+              "autoFit": "none",
+              "insets": {
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              }
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 9,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/i94fyx87",
+      "id": "9",
+      "name": "Content-Placeholder-17-10",
+      "bbox": [
+        657.68,
+        231.82,
+        272.54,
+        148.62
+      ],
+      "composeSource": {
+        "run": 1,
+        "path": "0.8"
+      },
+      "geometry": "rect",
+      "text": "E3 · Scholarships\nEligibility matching, favourites, rolling dates, and reminders.",
+      "textPreview": "E3 · Scholarships | Eligibility matching, favourites, rolling dates, and reminders.",
+      "resolvedFontSize": 21.33,
+      "resolvedTextStyle": {
+        "fontSize": 21.33,
+        "typeface": "Helvetica Neue",
+        "color": "#000000",
+        "alignment": "left",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 3,
+        "lines": [
+          {
+            "index": 1,
+            "text": "E3 · Scholarships"
+          },
+          {
+            "index": 2,
+            "text": "Eligibility matching, favourites,"
+          },
+          {
+            "index": 3,
+            "text": "rolling dates, and reminders."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "E3 · Scholarships",
+          "resolvedTextStyle": {
+            "fontSize": 21.33,
+            "typeface": "Helvetica Neue",
+            "color": "#000000",
+            "alignment": "left",
+            "autoFit": "none",
+            "insets": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "E3 · Scholarships",
+              "fontSize": 21.33,
+              "typeface": "Helvetica Neue",
+              "color": "#000000",
+              "alignment": "left",
+              "autoFit": "none",
+              "insets": {
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              }
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "Eligibility matching, favourites, rolling dates, and reminders.",
+          "resolvedTextStyle": {
+            "fontSize": 21.33,
+            "typeface": "Helvetica Neue",
+            "color": "#000000",
+            "alignment": "left",
+            "autoFit": "none",
+            "insets": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Eligibility matching, favourites, rolling dates, and reminders.",
+              "fontSize": 21.33,
+              "typeface": "Helvetica Neue",
+              "color": "#000000",
+              "alignment": "left",
+              "autoFit": "none",
+              "insets": {
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              }
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 10,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/sfyl0fmx",
+      "id": "10",
+      "name": "Text-Placeholder-18-11",
+      "bbox": [
+        966.48,
+        231.82,
+        272.54,
+        148.62
+      ],
+      "composeSource": {
+        "run": 1,
+        "path": "0.9"
+      },
+      "geometry": "rect",
+      "text": "E4 · Test preparation\nIELTS, PTE, SAT, English Foundation, quizzes, and progress.",
+      "textPreview": "E4 · Test preparation | IELTS, PTE, SAT, English Foundation, quizzes, and progress.",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "Helvetica Neue",
+        "color": "#000000",
+        "alignment": "left",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 4,
+        "lines": [
+          {
+            "index": 1,
+            "text": "E4 · Test preparation"
+          },
+          {
+            "index": 2,
+            "text": "IELTS, PTE, SAT, English"
+          },
+          {
+            "index": 3,
+            "text": "Foundation, quizzes, and"
+          },
+          {
+            "index": 4,
+            "text": "progress."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "E4 · Test preparation",
+          "resolvedTextStyle": {
+            "fontSize": 24,
+            "typeface": "Helvetica Neue",
+            "color": "#000000",
+            "alignment": "left",
+            "autoFit": "none",
+            "insets": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "E4 · Test preparation",
+              "fontSize": 24,
+              "typeface": "Helvetica Neue",
+              "color": "#000000",
+              "alignment": "left",
+              "autoFit": "none",
+              "insets": {
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              }
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "IELTS, PTE, SAT, English Foundation, quizzes, and progress.",
+          "resolvedTextStyle": {
+            "fontSize": 24,
+            "typeface": "Helvetica Neue",
+            "color": "#000000",
+            "alignment": "left",
+            "autoFit": "none",
+            "insets": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "IELTS, PTE, SAT, English Foundation, quizzes, and progress.",
+              "fontSize": 24,
+              "typeface": "Helvetica Neue",
+              "color": "#000000",
+              "alignment": "left",
+              "autoFit": "none",
+              "insets": {
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              }
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    }
+  ],
+  "composeRuns": [
+    {
+      "index": 1,
+      "frame": {
+        "left": 0,
+        "top": 0,
+        "width": 1280,
+        "height": 720
+      },
+      "baseUnit": 1,
+      "root": {
+        "path": "0",
+        "kind": "layers",
+        "name": "codex-grid-layout-library#slide-16",
+        "requestedSize": {
+          "width": {
+            "mode": "fill",
+            "value": 1
+          },
+          "height": {
+            "mode": "fill",
+            "value": 1
+          }
+        },
+        "intrinsicSize": {
+          "width": 1239.02,
+          "height": 684.57
+        },
+        "frame": {
+          "left": 0,
+          "top": 0,
+          "width": 1280,
+          "height": 720
+        },
+        "children": [
+          {
+            "path": "0.0",
+            "kind": "text",
+            "name": "Slide-Number-Placeholder-3-2",
+            "position": {
+              "left": 1184.18,
+              "top": 659.24
+            },
+            "requestedSize": {
+              "width": {
+                "mode": "fixed",
+                "value": 54.48
+              },
+              "height": {
+                "mode": "fixed",
+                "value": 25.33
+              }
+            },
+            "intrinsicSize": {
+              "width": 54.48,
+              "height": 25.33
+            },
+            "frame": {
+              "left": 1184.18,
+              "top": 659.24,
+              "width": 54.48,
+              "height": 25.33
+            },
+            "snappedFrame": {
+              "left": 1184.18,
+              "top": 659.24,
+              "width": 54.48,
+              "height": 25.33
+            },
+            "children": [],
+            "text": "08",
+            "transform": "none",
+            "element": {
+              "aid": "sh/mhkfqd8z",
+              "id": "1",
+              "kind": "shape"
+            }
+          },
+          {
+            "path": "0.1",
+            "kind": "text",
+            "name": "Title-10-3",
+            "position": {
+              "left": 41.33,
+              "top": 36.12
+            },
+            "requestedSize": {
+              "width": {
+                "mode": "fixed",
+                "value": 1197.33
+              },
+              "height": {
+                "mode": "fixed",
+                "value": 109.97
+              }
+            },
+            "intrinsicSize": {
+              "width": 1197.33,
+              "height": 109.97
+            },
+            "frame": {
+              "left": 41.33,
+              "top": 36.12,
+              "width": 1197.33,
+              "height": 109.97
+            },
+            "snappedFrame": {
+              "left": 41.33,
+              "top": 36.12,
+              "width": 1197.33,
+              "height": 109.97
+            },
+            "children": [],
+            "text": "Product backlog: epics",
+            "transform": "none",
+            "element": {
+              "aid": "sh/94be1s7q",
+              "id": "2",
+              "kind": "shape"
+            }
+          },
+          {
+            "path": "0.2",
+            "kind": "text",
+            "name": "Content-Placeholder-15-4",
+            "position": {
+              "left": 41.33,
+              "top": 436.86
+            },
+            "requestedSize": {
+              "width": {
+                "mode": "fixed",
+                "value": 272.54
+              },
+              "height": {
+                "mode": "fixed",
+                "value": 148.62
+              }
+            },
+            "intrinsicSize": {
+              "width": 272.54,
+              "height": 148.62
+            },
+            "frame": {
+              "left": 41.33,
+              "top": 436.86,
+              "width": 272.54,
+              "height": 148.62
+            },
+            "snappedFrame": {
+              "left": 41.33,
+              "top": 436.86,
+              "width": 272.54,
+              "height": 148.62
+            },
+            "children": [],
+            "text": "E5 · Visa interviewCountry topics, dynamic sessions, speech, evaluation, and reports.",
+            "transform": "none",
+            "element": {
+              "aid": "sh/832xsnq5",
+              "id": "3",
+              "kind": "shape"
+            }
+          },
+          {
+            "path": "0.3",
+            "kind": "text",
+            "name": "Text-Placeholder-16-5",
+            "position": {
+              "left": 350.13,
+              "top": 436.86
+            },
+            "requestedSize": {
+              "width": {
+                "mode": "fixed",
+                "value": 272.54
+              },
+              "height": {
+                "mode": "fixed",
+                "value": 148.62
+              }
+            },
+            "intrinsicSize": {
+              "width": 272.54,
+              "height": 148.62
+            },
+            "frame": {
+              "left": 350.13,
+              "top": 436.86,
+              "width": 272.54,
+              "height": 148.62
+            },
+            "snappedFrame": {
+              "left": 350.13,
+              "top": 436.86,
+              "width": 272.54,
+              "height": 148.62
+            },
+            "children": [],
+            "text": "E6 · SOP & documentsProfile intake, SOP generation, editing, and document guidance.",
+            "transform": "none",
+            "element": {
+              "aid": "sh/ze9wvip8",
+              "id": "4",
+              "kind": "shape"
+            }
+          },
+          {
+            "path": "0.4",
+            "kind": "text",
+            "name": "Content-Placeholder-17-6",
+            "position": {
+              "left": 657.68,
+              "top": 436.86
+            },
+            "requestedSize": {
+              "width": {
+                "mode": "fixed",
+                "value": 272.54
+              },
+              "height": {
+                "mode": "fixed",
+                "value": 148.62
+              }
+            },
+            "intrinsicSize": {
+              "width": 272.54,
+              "height": 148.62
+            },
+            "frame": {
+              "left": 657.68,
+              "top": 436.86,
+              "width": 272.54,
+              "height": 148.62
+            },
+            "snappedFrame": {
+              "left": 657.68,
+              "top": 436.86,
+              "width": 272.54,
+              "height": 148.62
+            },
+            "children": [],
+            "text": "E7 · Roadmap & expertsMilestones, consultant chat/call, and application guidance.",
+            "transform": "none",
+            "element": {
+              "aid": "sh/yd0fmd8n",
+              "id": "5",
+              "kind": "shape"
+            }
+          },
+          {
+            "path": "0.5",
+            "kind": "text",
+            "name": "Text-Placeholder-18-7",
+            "position": {
+              "left": 966.48,
+              "top": 436.86
+            },
+            "requestedSize": {
+              "width": {
+                "mode": "fixed",
+                "value": 272.54
+              },
+              "height": {
+                "mode": "fixed",
+                "value": 148.62
+              }
+            },
+            "intrinsicSize": {
+              "width": 272.54,
+              "height": 148.62
+            },
+            "frame": {
+              "left": 966.48,
+              "top": 436.86,
+              "width": 272.54,
+              "height": 148.62
+            },
+            "snappedFrame": {
+              "left": 966.48,
+              "top": 436.86,
+              "width": 272.54,
+              "height": 148.62
+            },
+            "children": [],
+            "text": "E8 · Community & insightsPosts, comments, chatbot, dashboards, notifications, analytics.",
+            "transform": "none",
+            "element": {
+              "aid": "sh/lgrex87e",
+              "id": "6",
+              "kind": "shape"
+            }
+          },
+          {
+            "path": "0.6",
+            "kind": "text",
+            "name": "Content-Placeholder-15-8",
+            "position": {
+              "left": 41.33,
+              "top": 231.82
+            },
+            "requestedSize": {
+              "width": {
+                "mode": "fixed",
+                "value": 272.54
+              },
+              "height": {
+                "mode": "fixed",
+                "value": 148.62
+              }
+            },
+            "intrinsicSize": {
+              "width": 272.54,
+              "height": 148.62
+            },
+            "frame": {
+              "left": 41.33,
+              "top": 231.82,
+              "width": 272.54,
+              "height": 148.62
+            },
+            "snappedFrame": {
+              "left": 41.33,
+              "top": 231.82,
+              "width": 272.54,
+              "height": 148.62
+            },
+            "children": [],
+            "text": "E1 · Identity & profileAuthentication, qualifications, goals, budget, and profile completion.",
+            "transform": "none",
+            "element": {
+              "aid": "sh/kfixonqt",
+              "id": "7",
+              "kind": "shape"
+            }
+          },
+          {
+            "path": "0.7",
+            "kind": "text",
+            "name": "Text-Placeholder-16-9",
+            "position": {
+              "left": 350.13,
+              "top": 231.82
+            },
+            "requestedSize": {
+              "width": {
+                "mode": "fixed",
+                "value": 272.54
+              },
+              "height": {
+                "mode": "fixed",
+                "value": 148.62
+              }
+            },
+            "intrinsicSize": {
+              "width": 272.54,
+              "height": 148.62
+            },
+            "frame": {
+              "left": 350.13,
+              "top": 231.82,
+              "width": 272.54,
+              "height": 148.62
+            },
+            "snappedFrame": {
+              "left": 350.13,
+              "top": 231.82,
+              "width": 272.54,
+              "height": 148.62
+            },
+            "children": [],
+            "text": "E2 · Discovery & fitUniversities, programs, costs, filters, recommendations, eligibility.",
+            "transform": "none",
+            "element": {
+              "aid": "sh/jadg72ps",
+              "id": "8",
+              "kind": "shape"
+            }
+          },
+          {
+            "path": "0.8",
+            "kind": "text",
+            "name": "Content-Placeholder-17-10",
+            "position": {
+              "left": 657.68,
+              "top": 231.82
+            },
+            "requestedSize": {
+              "width": {
+                "mode": "fixed",
+                "value": 272.54
+              },
+              "height": {
+                "mode": "fixed",
+                "value": 148.62
+              }
+            },
+            "intrinsicSize": {
+              "width": 272.54,
+              "height": 148.62
+            },
+            "frame": {
+              "left": 657.68,
+              "top": 231.82,
+              "width": 272.54,
+              "height": 148.62
+            },
+            "snappedFrame": {
+              "left": 657.68,
+              "top": 231.82,
+              "width": 272.54,
+              "height": 148.62
+            },
+            "children": [],
+            "text": "E3 · ScholarshipsEligibility matching, favourites, rolling dates, and reminders.",
+            "transform": "none",
+            "element": {
+              "aid": "sh/i94fyx87",
+              "id": "9",
+              "kind": "shape"
+            }
+          },
+          {
+            "path": "0.9",
+            "kind": "text",
+            "name": "Text-Placeholder-18-11",
+            "position": {
+              "left": 966.48,
+              "top": 231.82
+            },
+            "requestedSize": {
+              "width": {
+                "mode": "fixed",
+                "value": 272.54
+              },
+              "height": {
+                "mode": "fixed",
+                "value": 148.62
+              }
+            },
+            "intrinsicSize": {
+              "width": 272.54,
+              "height": 148.62
+            },
+            "frame": {
+              "left": 966.48,
+              "top": 231.82,
+              "width": 272.54,
+              "height": 148.62
+            },
+            "snappedFrame": {
+              "left": 966.48,
+              "top": 231.82,
+              "width": 272.54,
+              "height": 148.62
+            },
+            "children": [],
+            "text": "E4 · Test preparationIELTS, PTE, SAT, English Foundation, quizzes, and progress.",
+            "transform": "none",
+            "element": {
+              "aid": "sh/sfyl0fmx",
+              "id": "10",
+              "kind": "shape"
+            }
+          }
+        ],
+        "padding": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        },
+        "alignItems": "stretch",
+        "justifyItems": "stretch",
+        "contentFrame": {
+          "left": 0,
+          "top": 0,
+          "width": 1280,
+          "height": 720
+        },
+        "items": [
+          {
+            "path": "0.0",
+            "frame": {
+              "left": 1184.18,
+              "top": 659.24,
+              "width": 54.48,
+              "height": 25.33
+            }
+          },
+          {
+            "path": "0.1",
+            "frame": {
+              "left": 41.33,
+              "top": 36.12,
+              "width": 1197.33,
+              "height": 109.97
+            }
+          },
+          {
+            "path": "0.2",
+            "frame": {
+              "left": 41.33,
+              "top": 436.86,
+              "width": 272.54,
+              "height": 148.62
+            }
+          },
+          {
+            "path": "0.3",
+            "frame": {
+              "left": 350.13,
+              "top": 436.86,
+              "width": 272.54,
+              "height": 148.62
+            }
+          },
+          {
+            "path": "0.4",
+            "frame": {
+              "left": 657.68,
+              "top": 436.86,
+              "width": 272.54,
+              "height": 148.62
+            }
+          },
+          {
+            "path": "0.5",
+            "frame": {
+              "left": 966.48,
+              "top": 436.86,
+              "width": 272.54,
+              "height": 148.62
+            }
+          },
+          {
+            "path": "0.6",
+            "frame": {
+              "left": 41.33,
+              "top": 231.82,
+              "width": 272.54,
+              "height": 148.62
+            }
+          },
+          {
+            "path": "0.7",
+            "frame": {
+              "left": 350.13,
+              "top": 231.82,
+              "width": 272.54,
+              "height": 148.62
+            }
+          },
+          {
+            "path": "0.8",
+            "frame": {
+              "left": 657.68,
+              "top": 231.82,
+              "width": 272.54,
+              "height": 148.62
+            }
+          },
+          {
+            "path": "0.9",
+            "frame": {
+              "left": 966.48,
+              "top": 231.82,
+              "width": 272.54,
+              "height": 148.62
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

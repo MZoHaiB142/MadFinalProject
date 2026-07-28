@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardUniversity"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="4dp"
+    android:foreground="?android:attr/selectableItemBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Header Row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tvUniversityName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="University Name"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/primary_text" />
+
+            <TextView
+                android:id="@+id/tvCategory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Safe"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:padding="6dp"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:background="@color/brand_primary"
+                android:layout_marginStart="8dp" />
+        </LinearLayout>
+
+        <!-- Country and Ranking -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:id="@+id/tvCountry"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Country"
+                android:textSize="14sp"
+                android:textColor="@color/secondary_text" />
+
+            <TextView
+                android:id="@+id/tvRanking"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rank: #100"
+                android:textSize="14sp"
+                android:textColor="@color/secondary_text" />
+        </LinearLayout>
+
+        <!-- Tuition Fee -->
+        <TextView
+            android:id="@+id/tvTuitionFee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$50,000/year"
+            android:textSize="14sp"
+            android:textColor="@color/brand_primary"
+            android:textStyle="bold"
+            android:layout_marginTop="4dp" />
+
+        <!-- Supported Fields -->
+        <TextView
+            android:id="@+id/tvFields"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fields: Computer Science, Engineering"
+            android:textSize="13sp"
+            android:textColor="@color/secondary_text"
+            android:layout_marginTop="8dp" />
+
+        <!-- Explanation (AI-generated) -->
+        <TextView
+            android:id="@+id/tvExplanation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Explanation will appear here..."
+            android:textSize="12sp"
+            android:textColor="@color/secondary_text"
+            android:textStyle="italic"
+            android:layout_marginTop="8dp"
+            android:padding="8dp"
+            android:background="@color/input_background"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
+

@@ -1,0 +1,1407 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/c2xl8o",
+    "id": "c2xl8o",
+    "slide": 6,
+    "layoutId": "8526bcd9-7b2a-406a-b481-a45662d85af0",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "c2c8cc63-3769-4797-9610-10426558d208",
+    "masterLayoutName": "Master",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "ChatGPT",
+    "colors": {
+      "accent1": "#156082",
+      "accent2": "#E97132",
+      "accent3": "#196B24",
+      "accent4": "#0F9ED5",
+      "accent5": "#A02B93",
+      "accent6": "#4EA72E",
+      "bg1": "#FFFFFF",
+      "bg2": "#000000",
+      "tx1": "#1F1F1F",
+      "tx2": "#FFFFFF",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#0E2841",
+      "lt2": "#E8E8E8",
+      "hlink": "#467886",
+      "folHlink": "#96607D"
+    },
+    "typefaces": [
+      "Helvetica Neue"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "8526bcd9-7b2a-406a-b481-a45662d85af0",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "c2c8cc63-3769-4797-9610-10426558d208",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "c2c8cc63-3769-4797-9610-10426558d208",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/qh0n21wj",
+      "id": "1",
+      "name": "Google-Shape-532-p58-2",
+      "bbox": [
+        1184.18,
+        659.24,
+        54.48,
+        25.33
+      ],
+      "composeSource": {
+        "run": 1,
+        "path": "0.0"
+      },
+      "geometry": "rect",
+      "text": "06",
+      "textPreview": "06",
+      "resolvedFontSize": 13.33,
+      "resolvedTextStyle": {
+        "anchor": 3,
+        "fontSize": 13.33,
+        "typeface": "Helvetica Neue",
+        "color": "#000000",
+        "alignment": "right",
+        "verticalAlignment": "bottom",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "06"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "06",
+          "resolvedTextStyle": {
+            "anchor": 3,
+            "fontSize": 13.33,
+            "typeface": "Helvetica Neue",
+            "color": "#000000",
+            "alignment": "right",
+            "verticalAlignment": "bottom",
+            "wrap": "square",
+            "autoFit": "none",
+            "insets": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "06",
+              "anchor": 3,
+              "fontSize": 13.33,
+              "typeface": "Helvetica Neue",
+              "color": "#000000",
+              "alignment": "right",
+              "verticalAlignment": "bottom",
+              "wrap": "square",
+              "autoFit": "none",
+              "insets": {
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              }
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/dkrmxgfa",
+      "id": "2",
+      "name": "Google-Shape-533-p58-3",
+      "bbox": [
+        41.33,
+        36.12,
+        1197.33,
+        109.97
+      ],
+      "composeSource": {
+        "run": 1,
+        "path": "0.1"
+      },
+      "geometry": "rect",
+      "text": "Competitive landscape",
+      "textPreview": "Competitive landscape",
+      "resolvedFontSize": 38.67,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 38.67,
+        "typeface": "Helvetica Neue",
+        "color": "#000000",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Competitive landscape"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Competitive landscape",
+          "resolvedTextStyle": {
+            "anchor": 1,
+            "fontSize": 38.67,
+            "typeface": "Helvetica Neue",
+            "color": "#000000",
+            "alignment": "left",
+            "verticalAlignment": "top",
+            "wrap": "square",
+            "autoFit": "none",
+            "insets": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Competitive landscape",
+              "anchor": 1,
+              "fontSize": 38.67,
+              "typeface": "Helvetica Neue",
+              "color": "#000000",
+              "alignment": "left",
+              "verticalAlignment": "top",
+              "wrap": "square",
+              "autoFit": "none",
+              "insets": {
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              }
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/cji54bep",
+      "id": "3",
+      "name": "Content-Placeholder-15-4",
+      "bbox": [
+        42.09,
+        111.02,
+        1197.33,
+        106.27
+      ],
+      "composeSource": {
+        "run": 1,
+        "path": "0.2"
+      },
+      "geometry": "rect",
+      "text": "Feature emphasis across representative platforms\nAbroadIQ’s proposed advantage is an integrated mobile workflow; competitor capabilities are summarized from official product pages.",
+      "textPreview": "Feature emphasis across representative platforms | AbroadIQ’s proposed advantage is an integrated mobile workflow; competitor capabilitie...",
+      "resolvedFontSize": 21.33,
+      "resolvedTextStyle": {
+        "fontSize": 21.33,
+        "typeface": "Helvetica Neue",
+        "color": "#000000",
+        "alignment": "left",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Feature emphasis across representative platforms"
+          },
+          {
+            "index": 2,
+            "text": "AbroadIQ’s proposed advantage is an integrated mobile workflow; competitor capabilities are summarized from official product pages."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Feature emphasis across representative platforms",
+          "resolvedTextStyle": {
+            "fontSize": 21.33,
+            "typeface": "Helvetica Neue",
+            "color": "#000000",
+            "alignment": "left",
+            "autoFit": "none",
+            "insets": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Feature emphasis across representative platforms",
+              "fontSize": 21.33,
+              "typeface": "Helvetica Neue",
+              "color": "#000000",
+              "alignment": "left",
+              "autoFit": "none",
+              "insets": {
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              }
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "AbroadIQ’s proposed advantage is an integrated mobile workflow; competitor capabilities are summarized from official product pages.",
+          "resolvedTextStyle": {
+            "fontSize": 21.33,
+            "typeface": "Helvetica Neue",
+            "color": "#000000",
+            "alignment": "left",
+            "autoFit": "none",
+            "insets": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "AbroadIQ’s proposed advantage is an integrated mobile workflow; competitor capabilities are summarized from official product pages.",
+              "fontSize": 21.33,
+              "typeface": "Helvetica Neue",
+              "color": "#000000",
+              "alignment": "left",
+              "autoFit": "none",
+              "insets": {
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              }
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 4,
+      "kind": "table",
+      "scope": "slide",
+      "aid": "tb/uds32d07",
+      "id": "4",
+      "name": "Google-Shape-644-p93-5",
+      "bbox": [
+        41.33,
+        236.33,
+        1197.33,
+        412.87
+      ],
+      "composeSource": {
+        "run": 1,
+        "path": "0.3"
+      },
+      "text": "Platform | Discovery | Applications | Test Prep | Visa / SOP\nAbroadIQ | AI-matched | Guidance | IELTS · PTE | AI practice\nYocket | Personalized | Counselling | Limited | Visa support\nApplyBoard | AI search | Direct | Limited | 360 services\nIDP | Counsellor-led | Assisted | IELTS | Visa support\nMagoosh | — | — | IELTS-focused | —",
+      "textPreview": "Platform | Discovery | Applications | Test Prep | Visa / SOP | AbroadIQ | AI-matched | Guidance | IELTS · PTE | AI practice | Yocket | Pe...",
+      "rows": 6,
+      "cols": 5,
+      "cells": [
+        {
+          "index": 1,
+          "row": 1,
+          "column": 1,
+          "bbox": [
+            41.33,
+            236.33,
+            410.09,
+            68.81
+          ],
+          "text": "Platform",
+          "textPreview": "Platform",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Platform",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Platform"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "row": 1,
+          "column": 2,
+          "bbox": [
+            451.42,
+            236.33,
+            196.81,
+            68.81
+          ],
+          "text": "Discovery",
+          "textPreview": "Discovery",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Discovery",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Discovery"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 3,
+          "row": 1,
+          "column": 3,
+          "bbox": [
+            648.23,
+            236.33,
+            196.81,
+            68.81
+          ],
+          "text": "Applications",
+          "textPreview": "Applications",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Applications",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Applications"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 4,
+          "row": 1,
+          "column": 4,
+          "bbox": [
+            845.04,
+            236.33,
+            196.81,
+            68.81
+          ],
+          "text": "Test Prep",
+          "textPreview": "Test Prep",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Test Prep",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Test Prep"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 5,
+          "row": 1,
+          "column": 5,
+          "bbox": [
+            1041.85,
+            236.33,
+            196.81,
+            68.81
+          ],
+          "text": "Visa / SOP",
+          "textPreview": "Visa / SOP",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Visa / SOP",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Visa / SOP"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 6,
+          "row": 2,
+          "column": 1,
+          "bbox": [
+            41.33,
+            305.14,
+            410.09,
+            68.81
+          ],
+          "text": "AbroadIQ",
+          "textPreview": "AbroadIQ",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "AbroadIQ",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "AbroadIQ"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 7,
+          "row": 2,
+          "column": 2,
+          "bbox": [
+            451.42,
+            305.14,
+            196.81,
+            68.81
+          ],
+          "text": "AI-matched",
+          "textPreview": "AI-matched",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "AI-matched",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "AI-matched"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 8,
+          "row": 2,
+          "column": 3,
+          "bbox": [
+            648.23,
+            305.14,
+            196.81,
+            68.81
+          ],
+          "text": "Guidance",
+          "textPreview": "Guidance",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Guidance",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Guidance"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 9,
+          "row": 2,
+          "column": 4,
+          "bbox": [
+            845.04,
+            305.14,
+            196.81,
+            68.81
+          ],
+          "text": "IELTS · PTE",
+          "textPreview": "IELTS · PTE",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "IELTS · PTE",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "IELTS · PTE"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 10,
+          "row": 2,
+          "column": 5,
+          "bbox": [
+            1041.85,
+            305.14,
+            196.81,
+            68.81
+          ],
+          "text": "AI practice",
+          "textPreview": "AI practice",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "AI practice",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "AI practice"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 11,
+          "row": 3,
+          "column": 1,
+          "bbox": [
+            41.33,
+            373.95,
+            410.09,
+            68.81
+          ],
+          "text": "Yocket",
+          "textPreview": "Yocket",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Yocket",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Yocket"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 12,
+          "row": 3,
+          "column": 2,
+          "bbox": [
+            451.42,
+            373.95,
+            196.81,
+            68.81
+          ],
+          "text": "Personalized",
+          "textPreview": "Personalized",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Personalized",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Personalized"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 13,
+          "row": 3,
+          "column": 3,
+          "bbox": [
+            648.23,
+            373.95,
+            196.81,
+            68.81
+          ],
+          "text": "Counselling",
+          "textPreview": "Counselling",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Counselling",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Counselling"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 14,
+          "row": 3,
+          "column": 4,
+          "bbox": [
+            845.04,
+            373.95,
+            196.81,
+            68.81
+          ],
+          "text": "Limited",
+          "textPreview": "Limited",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Limited",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Limited"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 15,
+          "row": 3,
+          "column": 5,
+          "bbox": [
+            1041.85,
+            373.95,
+            196.81,
+            68.81
+          ],
+          "text": "Visa support",
+          "textPreview": "Visa support",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Visa support",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Visa support"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 16,
+          "row": 4,
+          "column": 1,
+          "bbox": [
+            41.33,
+            442.77,
+            410.09,
+            68.81
+          ],
+          "text": "ApplyBoard",
+          "textPreview": "ApplyBoard",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "ApplyBoard",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "ApplyBoard"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 17,
+          "row": 4,
+          "column": 2,
+          "bbox": [
+            451.42,
+            442.77,
+            196.81,
+            68.81
+          ],
+          "text": "AI search",
+          "textPreview": "AI search",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "AI search",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "AI search"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 18,
+          "row": 4,
+          "column": 3,
+          "bbox": [
+            648.23,
+            442.77,
+            196.81,
+            68.81
+          ],
+          "text": "Direct",
+          "textPreview": "Direct",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Direct",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Direct"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 19,
+          "row": 4,
+          "column": 4,
+          "bbox": [
+            845.04,
+            442.77,
+            196.81,
+            68.81
+          ],
+          "text": "Limited",
+          "textPreview": "Limited",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Limited",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Limited"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 20,
+          "row": 4,
+          "column": 5,
+          "bbox": [
+            1041.85,
+            442.77,
+            196.81,
+            68.81
+          ],
+          "text": "360 services",
+          "textPreview": "360 services",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "360 services",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "360 services"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 21,
+          "row": 5,
+          "column": 1,
+          "bbox": [
+            41.33,
+            511.58,
+            410.09,
+            68.81
+          ],
+          "text": "IDP",
+          "textPreview": "IDP",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "IDP",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "IDP"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 22,
+          "row": 5,
+          "column": 2,
+          "bbox": [
+            451.42,
+            511.58,
+            196.81,
+            68.81
+          ],
+          "text": "Counsellor-led",
+          "textPreview": "Counsellor-led",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Counsellor-led",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Counsellor-led"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 23,
+          "row": 5,
+          "column": 3,
+          "bbox": [
+            648.23,
+            511.58,
+            196.81,
+            68.81
+          ],
+          "text": "Assisted",
+          "textPreview": "Assisted",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Assisted",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Assisted"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 24,
+          "row": 5,
+          "column": 4,
+          "bbox": [
+            845.04,
+            511.58,
+            196.81,
+            68.81
+          ],
+          "text": "IELTS",
+          "textPreview": "IELTS",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "IELTS",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "IELTS"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 25,
+          "row": 5,
+          "column": 5,
+          "bbox": [
+            1041.85,
+            511.58,
+            196.81,
+            68.81
+          ],
+          "text": "Visa support",
+          "textPreview": "Visa support",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Visa support",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Visa support"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 26,
+          "row": 6,
+          "column": 1,
+          "bbox": [
+            41.33,
+            580.39,
+            410.09,
+            68.81
+          ],
+          "text": "Magoosh",
+          "textPreview": "Magoosh",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Magoosh",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Magoosh"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 27,
+          "row": 6,
+          "column": 2,
+          "bbox": [
+            451.42,
+            580.39,
+            196.81,
+            68.81
+          ],
+          "text": "—",
+          "textPreview": "—",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "—",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "—"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 28,
+          "row": 6,
+          "column": 3,
+          "bbox": [
+            648.23,
+            580.39,
+            196.81,
+            68.81
+          ],
+          "text": "—",
+          "textPreview": "—",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "—",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "—"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 29,
+          "row": 6,
+          "column": 4,
+          "bbox": [
+            845.04,
+            580.39,
+            196.81,
+            68.81
+          ],
+          "text": "IELTS-focused",
+          "textPreview": "IELTS-focused",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "IELTS-focused",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "IELTS-focused"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 30,
+          "row": 6,
+          "column": 5,
+          "bbox": [
+            1041.85,
+            580.39,
+            196.81,
+            68.81
+          ],
+          "text": "—",
+          "textPreview": "—",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "—",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "—"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "composeRuns": [
+    {
+      "index": 1,
+      "frame": {
+        "left": 0,
+        "top": 0,
+        "width": 1280,
+        "height": 720
+      },
+      "baseUnit": 1,
+      "root": {
+        "path": "0",
+        "kind": "layers",
+        "name": "codex-grid-layout-library#slide-14",
+        "requestedSize": {
+          "width": {
+            "mode": "fill",
+            "value": 1
+          },
+          "height": {
+            "mode": "fill",
+            "value": 1
+          }
+        },
+        "intrinsicSize": {
+          "width": 1239.42,
+          "height": 684.57
+        },
+        "frame": {
+          "left": 0,
+          "top": 0,
+          "width": 1280,
+          "height": 720
+        },
+        "children": [
+          {
+            "path": "0.0",
+            "kind": "text",
+            "name": "Google-Shape-532-p58-2",
+            "position": {
+              "left": 1184.18,
+              "top": 659.24
+            },
+            "requestedSize": {
+              "width": {
+                "mode": "fixed",
+                "value": 54.48
+              },
+              "height": {
+                "mode": "fixed",
+                "value": 25.33
+              }
+            },
+            "intrinsicSize": {
+              "width": 54.48,
+              "height": 25.33
+            },
+            "frame": {
+              "left": 1184.18,
+              "top": 659.24,
+              "width": 54.48,
+              "height": 25.33
+            },
+            "snappedFrame": {
+              "left": 1184.18,
+              "top": 659.24,
+              "width": 54.48,
+              "height": 25.33
+            },
+            "children": [],
+            "text": "06",
+            "transform": "none",
+            "element": {
+              "aid": "sh/qh0n21wj",
+              "id": "1",
+              "kind": "shape"
+            }
+          },
+          {
+            "path": "0.1",
+            "kind": "text",
+            "name": "Google-Shape-533-p58-3",
+            "position": {
+              "left": 41.33,
+              "top": 36.12
+            },
+            "requestedSize": {
+              "width": {
+                "mode": "fixed",
+                "value": 1197.33
+              },
+              "height": {
+                "mode": "fixed",
+                "value": 109.97
+              }
+            },
+            "intrinsicSize": {
+              "width": 1197.33,
+              "height": 109.97
+            },
+            "frame": {
+              "left": 41.33,
+              "top": 36.12,
+              "width": 1197.33,
+              "height": 109.97
+            },
+            "snappedFrame": {
+              "left": 41.33,
+              "top": 36.12,
+              "width": 1197.33,
+              "height": 109.97
+            },
+            "children": [],
+            "text": "Competitive landscape",
+            "transform": "none",
+            "element": {
+              "aid": "sh/dkrmxgfa",
+              "id": "2",
+              "kind": "shape"
+            }
+          },
+          {
+            "path": "0.2",
+            "kind": "text",
+            "name": "Content-Placeholder-15-4",
+            "position": {
+              "left": 42.09,
+              "top": 111.02
+            },
+            "requestedSize": {
+              "width": {
+                "mode": "fixed",
+                "value": 1197.33
+              },
+              "height": {
+                "mode": "fixed",
+                "value": 106.27
+              }
+            },
+            "intrinsicSize": {
+              "width": 1197.33,
+              "height": 106.27
+            },
+            "frame": {
+              "left": 42.09,
+              "top": 111.02,
+              "width": 1197.33,
+              "height": 106.27
+            },
+            "snappedFrame": {
+              "left": 42.09,
+              "top": 111.02,
+              "width": 1197.33,
+              "height": 106.27
+            },
+            "children": [],
+            "text": "Feature emphasis across representative platformsAbroadIQ’s proposed advantage is an integrated mobile workflow; competitor capabilities are summarized from official product pages.",
+            "transform": "none",
+            "element": {
+              "aid": "sh/cji54bep",
+              "id": "3",
+              "kind": "shape"
+            }
+          },
+          {
+            "path": "0.3",
+            "kind": "table",
+            "name": "Google-Shape-644-p93-5",
+            "position": {
+              "left": 41.33,
+              "top": 236.33
+            },
+            "requestedSize": {
+              "width": {
+                "mode": "fixed",
+                "value": 1197.33
+              },
+              "height": {
+                "mode": "fixed",
+                "value": 412.87
+              }
+            },
+            "intrinsicSize": {
+              "width": 1197.33,
+              "height": 412.87
+            },
+            "frame": {
+              "left": 41.33,
+              "top": 236.33,
+              "width": 1197.33,
+              "height": 412.87
+            },
+            "snappedFrame": {
+              "left": 41.33,
+              "top": 236.33,
+              "width": 1197.33,
+              "height": 412.87
+            },
+            "children": [],
+            "rows": 6,
+            "columns": 5,
+            "columnWidths": [
+              410.09,
+              196.81,
+              196.81,
+              196.81,
+              196.81
+            ],
+            "element": {
+              "aid": "tb/uds32d07",
+              "id": "4",
+              "kind": "table"
+            }
+          }
+        ],
+        "padding": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        },
+        "alignItems": "stretch",
+        "justifyItems": "stretch",
+        "contentFrame": {
+          "left": 0,
+          "top": 0,
+          "width": 1280,
+          "height": 720
+        },
+        "items": [
+          {
+            "path": "0.0",
+            "frame": {
+              "left": 1184.18,
+              "top": 659.24,
+              "width": 54.48,
+              "height": 25.33
+            }
+          },
+          {
+            "path": "0.1",
+            "frame": {
+              "left": 41.33,
+              "top": 36.12,
+              "width": 1197.33,
+              "height": 109.97
+            }
+          },
+          {
+            "path": "0.2",
+            "frame": {
+              "left": 42.09,
+              "top": 111.02,
+              "width": 1197.33,
+              "height": 106.27
+            }
+          },
+          {
+            "path": "0.3",
+            "frame": {
+              "left": 41.33,
+              "top": 236.33,
+              "width": 1197.33,
+              "height": 412.87
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

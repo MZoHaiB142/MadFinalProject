@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent" android:background="#FAFBFE">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="14dp">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="54dp">
+            <ImageButton android:id="@+id/btnBack" android:layout_width="42dp" android:layout_height="42dp" android:layout_centerVertical="true" android:background="?attr/selectableItemBackgroundBorderless" android:contentDescription="Back" android:padding="11dp" android:src="@drawable/ic_arrow_back"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:text="Speaking Practice" android:textColor="#071A48" android:textSize="17sp" android:textStyle="bold"/>
+        </RelativeLayout>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center" android:text="Read the word aloud and clearly." android:textColor="#52617C" android:textSize="12sp"/>
+        <TextView android:id="@+id/speakingWord" android:layout_width="match_parent" android:layout_height="96dp" android:layout_marginTop="16dp" android:background="@drawable/bg_vocabulary_soft" android:gravity="center" android:textColor="#5B35DD" android:textSize="27sp" android:textStyle="bold"/>
+        <TextView android:id="@+id/btnMic" android:layout_width="96dp" android:layout_height="96dp" android:layout_gravity="center_horizontal" android:layout_marginTop="28dp" android:background="@drawable/bg_vocabulary_gradient" android:gravity="center" android:text="🎤" android:textSize="34sp"/>
+        <TextView android:id="@+id/speakingState" android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center" android:padding="14dp" android:text="Tap the microphone to speak" android:textColor="#5B35DD" android:textStyle="bold"/>
+        <TextView android:id="@+id/transcriptText" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/bg_test_card" android:minHeight="64dp" android:padding="14dp" android:text="Your recognized speech will appear here." android:textColor="#52617C"/>
+        <LinearLayout android:id="@+id/scoreCard" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:background="@drawable/bg_vocabulary_success" android:orientation="vertical" android:padding="15dp" android:visibility="gone">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Pronunciation Score" android:textColor="#17294D" android:textStyle="bold"/>
+            <TextView android:id="@+id/speakingScore" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="0%" android:textColor="#16A34A" android:textSize="28sp" android:textStyle="bold"/>
+            <TextView android:id="@+id/speakingFeedback" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:textColor="#52617C"/>
+        </LinearLayout>
+        <Button android:id="@+id/btnNextSpeaking" android:layout_width="match_parent" android:layout_height="52dp" android:layout_marginTop="18dp" android:background="@drawable/bg_purple_button" android:text="Next Word" android:textAllCaps="false" android:textColor="#FFFFFF"/>
+        <ProgressBar android:id="@+id/loading" android:layout_width="36dp" android:layout_height="36dp" android:layout_gravity="center_horizontal" android:layout_margin="18dp" android:indeterminateTint="#5B35DD"/>
+    </LinearLayout>
+</ScrollView>

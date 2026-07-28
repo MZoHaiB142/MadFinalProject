@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <!-- Header Section -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:background="#FFFFFF">
+
+        <TextView
+            android:id="@+id/tvHeaderTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ask a Question"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#111827"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <!-- Close (X) Button -->
+        <TextView
+            android:id="@+id/btnClose"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:text="Close"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#4B5563"
+            android:gravity="center"
+            android:background="@drawable/bg_circle_gray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- Divider Line -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#F3F4F6"/>
+
+    <!-- Main Form Content -->
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- TOPIC TAG LABEL -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TOPIC TAG"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="#4B5563"
+                android:letterSpacing="0.05"
+                android:layout_marginBottom="12dp"/>
+
+            <!-- Tags Section -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="28dp">
+
+                <!-- Row 1 Tags -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:id="@+id/tagGeneral"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="General"
+                        android:textColor="#FFFFFF"
+                        android:background="@drawable/bg_tag_selected"
+                        android:paddingStart="20dp"
+                        android:paddingEnd="20dp"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp"
+                        android:textStyle="bold"
+                        android:layout_marginEnd="12dp"/>
+
+                    <TextView
+                        android:id="@+id/tagVisa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Visa Help"
+                        android:textColor="#4B5563"
+                        android:background="@drawable/bg_tag_unselected"
+                        android:paddingStart="20dp"
+                        android:paddingEnd="20dp"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp"
+                        android:textStyle="bold"
+                        android:layout_marginEnd="12dp"/>
+
+                    <TextView
+                        android:id="@+id/tagIelts"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="IELTS Prep"
+                        android:textColor="#4B5563"
+                        android:background="@drawable/bg_tag_unselected"
+                        android:paddingStart="20dp"
+                        android:paddingEnd="20dp"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+
+                <!-- Row 2 Tag -->
+                <TextView
+                    android:id="@+id/tagUniLife"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="University Life"
+                    android:textColor="#4B5563"
+                    android:background="@drawable/bg_tag_unselected"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <!-- QUESTION TITLE LABEL -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="QUESTION TITLE"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="#4B5563"
+                android:letterSpacing="0.05"
+                android:layout_marginBottom="12dp"/>
+
+            <!-- Title Input -->
+            <EditText
+                android:id="@+id/etPostTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="E.g., How to prepare for IELTS speaking?"
+                android:textColorHint="#9CA3AF"
+                android:textColor="#111827"
+                android:textSize="15sp"
+                android:background="@drawable/bg_input_field"
+                android:padding="16dp"
+                android:layout_marginBottom="28dp"
+                android:inputType="textCapSentences"/>
+
+            <!-- DETAILS LABEL -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DETAILS"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="#4B5563"
+                android:letterSpacing="0.05"
+                android:layout_marginBottom="12dp"/>
+
+            <!-- Details Input -->
+            <EditText
+                android:id="@+id/etPostBody"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Share more details about your question..."
+                android:textColorHint="#9CA3AF"
+                android:textColor="#111827"
+                android:textSize="15sp"
+                android:background="@drawable/bg_input_field"
+                android:padding="16dp"
+                android:minLines="6"
+                android:gravity="top|start"
+                android:inputType="textCapSentences|textMultiLine"/>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <!-- Post Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnPost"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="Post Question"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:layout_margin="20dp"
+        app:cornerRadius="28dp"
+        app:backgroundTint="#2563EB"/>
+
+</LinearLayout>

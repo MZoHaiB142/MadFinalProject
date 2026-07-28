@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="TestTagStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/bg_tag</item>
+        <item name="android:textColor">#4B5563</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:paddingHorizontal">12dp</item>
+        <item name="android:paddingVertical">4dp</item>
+        <item name="android:layout_marginEnd">8dp</item>
+    </style>
+    <style name="EnglishTestRow">
+        <item name="android:layout_width">match_parent</item><item name="android:layout_height">112dp</item><item name="android:orientation">horizontal</item><item name="android:gravity">center_vertical</item><item name="android:padding">14dp</item>
+    </style>
+    <style name="EnglishTestLogo">
+        <item name="android:layout_width">76dp</item><item name="android:layout_height">76dp</item><item name="android:gravity">center</item><item name="android:textColor">#FFFFFF</item><item name="android:textSize">20sp</item><item name="android:textStyle">bold</item>
+    </style>
+    <style name="EnglishTestName">
+        <item name="android:layout_width">0dp</item><item name="android:layout_height">wrap_content</item><item name="android:layout_weight">1</item><item name="android:layout_marginStart">16dp</item><item name="android:textColor">#52617C</item><item name="android:textSize">13sp</item><item name="android:lineSpacingExtra">3dp</item>
+    </style>
+    <style name="EnglishTestArrow">
+        <item name="android:layout_width">38dp</item><item name="android:layout_height">38dp</item><item name="android:background">@drawable/bg_badge_soft_blue</item><item name="android:gravity">center</item><item name="android:text">›</item><item name="android:textColor">#164BE8</item><item name="android:textSize">28sp</item>
+    </style>
+    <style name="IeltsSectionCard">
+        <item name="android:layout_width">match_parent</item><item name="android:layout_height">wrap_content</item><item name="android:layout_marginTop">14dp</item><item name="android:background">@drawable/bg_test_card</item><item name="android:orientation">vertical</item><item name="android:padding">18dp</item>
+    </style>
+    <style name="ToolTile">
+        <item name="android:layout_width">0dp</item><item name="android:layout_height">74dp</item><item name="android:layout_weight">1</item><item name="android:layout_margin">4dp</item><item name="android:background">@drawable/bg_test_card</item><item name="android:gravity">center</item><item name="android:textColor">#071A48</item><item name="android:textSize">11sp</item><item name="android:textStyle">bold</item>
+    </style>
+    <style name="PrepSectionTitle">
+        <item name="android:layout_width">match_parent</item><item name="android:layout_height">wrap_content</item><item name="android:layout_marginTop">20dp</item><item name="android:layout_marginBottom">10dp</item><item name="android:textColor">#071A48</item><item name="android:textSize">15sp</item><item name="android:textStyle">bold</item>
+    </style>
+    <style name="PrepPlanRow">
+        <item name="android:layout_width">match_parent</item><item name="android:layout_height">58dp</item><item name="android:gravity">center_vertical</item><item name="android:orientation">horizontal</item><item name="android:paddingLeft">10dp</item><item name="android:paddingRight">10dp</item>
+    </style>
+    <style name="PrepPlanIcon">
+        <item name="android:layout_width">38dp</item><item name="android:layout_height">38dp</item><item name="android:background">@drawable/bg_badge_soft_blue</item><item name="android:gravity">center</item><item name="android:textSize">18sp</item>
+    </style>
+    <style name="PrepPlanText">
+        <item name="android:layout_width">0dp</item><item name="android:layout_height">wrap_content</item><item name="android:layout_weight">1</item><item name="android:layout_marginStart">10dp</item><item name="android:textColor">#243453</item><item name="android:textSize">12sp</item><item name="android:lineSpacingExtra">2dp</item>
+    </style>
+    <style name="PrepTab"><item name="android:layout_width">0dp</item><item name="android:layout_height">match_parent</item><item name="android:layout_weight">1</item><item name="android:gravity">center</item><item name="android:textColor">#52617C</item><item name="android:textSize">11sp</item></style>
+    <style name="PrepChoice"><item name="android:layout_width">0dp</item><item name="android:layout_height">86dp</item><item name="android:layout_weight">1</item><item name="android:layout_margin">5dp</item><item name="android:background">@drawable/bg_test_card</item><item name="android:gravity">center</item><item name="android:textColor">#071A48</item><item name="android:textSize">12sp</item><item name="android:textStyle">bold</item></style>
+    <style name="LessonRow"><item name="android:layout_width">match_parent</item><item name="android:layout_height">76dp</item><item name="android:layout_marginBottom">10dp</item><item name="android:background">@drawable/bg_test_card</item><item name="android:gravity">center_vertical</item><item name="android:orientation">horizontal</item><item name="android:padding">10dp</item></style>
+    <style name="FoundationRow"><item name="android:layout_width">match_parent</item><item name="android:layout_height">70dp</item><item name="android:layout_marginBottom">9dp</item><item name="android:background">@drawable/bg_test_card</item><item name="android:gravity">center_vertical</item><item name="android:paddingLeft">16dp</item><item name="android:paddingRight">16dp</item><item name="android:textColor">#243453</item><item name="android:textSize">12sp</item><item name="android:lineSpacingExtra">3dp</item></style>
+    <style name="AdmissionFilter"><item name="android:layout_width">0dp</item><item name="android:layout_height">38dp</item><item name="android:layout_weight">1</item><item name="android:layout_margin">3dp</item><item name="android:background">@drawable/bg_test_card</item><item name="android:gravity">center</item><item name="android:textColor">#52617C</item><item name="android:textSize">10sp</item></style>
+    <style name="AdmissionCard"><item name="android:layout_width">match_parent</item><item name="android:layout_height">128dp</item><item name="android:layout_marginBottom">10dp</item><item name="android:background">@drawable/bg_test_card</item><item name="android:gravity">center_vertical</item><item name="android:orientation">horizontal</item><item name="android:padding">12dp</item></style>
+    <style name="AdmissionLogo"><item name="android:layout_width">62dp</item><item name="android:layout_height">62dp</item><item name="android:gravity">center</item><item name="android:textColor">#FFFFFF</item><item name="android:textSize">20sp</item><item name="android:textStyle">bold</item></style>
+    <style name="AdmissionInfo"><item name="android:layout_width">0dp</item><item name="android:layout_height">wrap_content</item><item name="android:layout_weight">1</item><item name="android:layout_marginStart">14dp</item><item name="android:textColor">#243453</item><item name="android:textSize">11sp</item><item name="android:lineSpacingExtra">3dp</item></style>
+    <style name="VisaCountryOption">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">64dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:background">@drawable/bg_test_card</item>
+        <item name="android:buttonTint">#5B35DD</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:textColor">#243453</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="VisaTypeRow"><item name="android:layout_width">match_parent</item><item name="android:layout_height">72dp</item><item name="android:layout_marginBottom">9dp</item><item name="android:background">@drawable/bg_test_card</item><item name="android:buttonTint">#5B35DD</item><item name="android:gravity">center_vertical</item><item name="android:paddingLeft">14dp</item><item name="android:paddingRight">14dp</item><item name="android:textColor">#243453</item><item name="android:textSize">12sp</item><item name="android:textStyle">bold</item></style>
+    <style name="VisaStep"><item name="android:layout_width">0dp</item><item name="android:layout_height">96dp</item><item name="android:layout_weight">1</item><item name="android:gravity">center</item><item name="android:textColor">#243453</item><item name="android:textSize">10sp</item><item name="android:textStyle">bold</item></style>
+    <style name="VisaStepArrow"><item name="android:layout_width">18dp</item><item name="android:layout_height">wrap_content</item><item name="android:gravity">center</item><item name="android:text">→</item><item name="android:textColor">#94A3B8</item><item name="android:textSize">15sp</item></style>
+    <style name="VisaTopicRow"><item name="android:layout_width">match_parent</item><item name="android:layout_height">72dp</item><item name="android:layout_marginBottom">9dp</item><item name="android:background">@drawable/bg_test_card</item><item name="android:gravity">center_vertical</item><item name="android:paddingLeft">16dp</item><item name="android:paddingRight">16dp</item><item name="android:textColor">#243453</item><item name="android:textSize">11sp</item><item name="android:lineSpacingExtra">3dp</item></style>
+    <style name="PersonalTab"><item name="android:layout_width">0dp</item><item name="android:layout_height">match_parent</item><item name="android:layout_weight">1</item><item name="android:gravity">center</item><item name="android:textColor">#52617C</item><item name="android:textSize">12sp</item></style>
+    <style name="PersonalLessonRow"><item name="android:layout_width">match_parent</item><item name="android:layout_height">68dp</item><item name="android:layout_marginBottom">9dp</item><item name="android:background">@drawable/bg_test_card</item><item name="android:gravity">center_vertical</item><item name="android:orientation">horizontal</item><item name="android:padding">10dp</item></style>
+    <style name="PersonalLessonIcon"><item name="android:layout_width">42dp</item><item name="android:layout_height">42dp</item><item name="android:background">@drawable/bg_badge_soft_blue</item><item name="android:gravity">center</item><item name="android:textSize">18sp</item></style>
+    <style name="PersonalLessonText"><item name="android:layout_width">0dp</item><item name="android:layout_height">wrap_content</item><item name="android:layout_weight">1</item><item name="android:layout_marginStart">12dp</item><item name="android:textColor">#243453</item><item name="android:textSize">11sp</item><item name="android:textStyle">bold</item><item name="android:lineSpacingExtra">3dp</item></style>
+    <style name="PersonalLessonStatus"><item name="android:layout_width">32dp</item><item name="android:layout_height">32dp</item><item name="android:gravity">center</item><item name="android:textSize">15sp</item></style>
+    <style name="InterviewControl"><item name="android:layout_width">46dp</item><item name="android:layout_height">46dp</item><item name="android:layout_margin">5dp</item><item name="android:background">@drawable/bg_circle_white</item><item name="android:gravity">center</item><item name="android:textColor">#071A48</item><item name="android:textSize">18sp</item></style>
+    <style name="ResultMetric"><item name="android:layout_width">0dp</item><item name="android:layout_height">match_parent</item><item name="android:layout_weight">1</item><item name="android:layout_margin">4dp</item><item name="android:background">@drawable/bg_test_card</item><item name="android:gravity">center</item><item name="android:textSize">12sp</item><item name="android:textStyle">bold</item></style>
+    <style name="ResultAnalysisRow"><item name="android:layout_width">match_parent</item><item name="android:layout_height">54dp</item><item name="android:gravity">center_vertical</item><item name="android:paddingLeft">8dp</item><item name="android:paddingRight">8dp</item><item name="android:textSize">12sp</item><item name="android:textStyle">bold</item></style>
+    <style name="ProgressTab"><item name="android:layout_width">0dp</item><item name="android:layout_height">match_parent</item><item name="android:layout_weight">1</item><item name="android:gravity">center</item><item name="android:textColor">#52617C</item><item name="android:textSize">10sp</item></style>
+    <style name="ProgressStat"><item name="android:layout_width">0dp</item><item name="android:layout_height">match_parent</item><item name="android:layout_weight">1</item><item name="android:layout_margin">4dp</item><item name="android:background">@drawable/bg_test_card</item><item name="android:gravity">center</item><item name="android:textSize">11sp</item><item name="android:textStyle">bold</item></style>
+    <style name="TopicLessonCopy"><item name="android:layout_width">0dp</item><item name="android:layout_height">wrap_content</item><item name="android:layout_weight">1</item><item name="android:layout_marginStart">12dp</item><item name="android:orientation">vertical</item></style>
+    <style name="TopicLessonTitle"><item name="android:layout_width">wrap_content</item><item name="android:layout_height">wrap_content</item><item name="android:textColor">#243453</item><item name="android:textSize">12sp</item><item name="android:textStyle">bold</item></style>
+    <style name="TopicLessonMeta"><item name="android:layout_width">wrap_content</item><item name="android:layout_height">wrap_content</item><item name="android:layout_marginTop">4dp</item><item name="android:textColor">#52617C</item><item name="android:textSize">10sp</item></style>
+</resources>

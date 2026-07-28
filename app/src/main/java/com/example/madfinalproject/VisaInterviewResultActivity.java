@@ -1,0 +1,26 @@
+package com.example.madfinalproject;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.TextView;
+import android.widget.Toast;
+import androidx.appcompat.app.AppCompatActivity;
+import com.example.madfinalproject.ai.EvaluationSessionStore;
+import com.example.madfinalproject.ai.models.AIEvaluationResponse;
+import com.example.madfinalproject.ai.models.Scores;
+import com.example.madfinalproject.engine.InterviewController;
+import com.example.madfinalproject.reports.InterviewReport;
+import com.example.madfinalproject.reports.ReportPdfExporter;
+import com.example.madfinalproject.reports.ReportStore;
+import java.util.ArrayList;
+import java.util.List;
+
+public class VisaInterviewResultActivity extends AppCompatActivity {
+    @Override protected void onCreate(Bundle savedInstanceState){super.onCreate(savedInstanceState);setContentView(R.layout.activity_visa_interview_result);render();findViewById(R.id.btnBack).setOnClickListener(v->finish());findViewById(R.id.btnReviewAnswers).setOnClickListener(v->Toast.makeText(this,"Detailed answers are saved in your interview history.",Toast.LENGTH_SHORT).show());findViewById(R.id.btnDownloadReport).setOnClickListener(v->export(false));findViewById(R.id.btnShareReport).setOnClickListener(v->export(true));findViewById(R.id.btnPrintReport).setOnClickListener(v->{InterviewReport r=ReportStore.get();if(r!=null)ReportPdfExporter.print(this,r);});findViewById(R.id.btnHome).setOnClickListener(v->{InterviewController.getInstance().resetInterview();EvaluationSessionStore.clear();ReportStore.clear();Intent intent=new Intent(this,dashboardActivity.class);intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP|Intent.FLAG_ACTIVITY_SINGLE_TOP);startActivity(intent);finish();});}
+    private void render(){InterviewReport stored=ReportStore.get();List<AIEvaluationResponse> values=EvaluationSessionStore.results();if(values.isEmpty()){if(stored!=null)renderStored(stored);return;}int overall=0,content=0,grammar=0,fluency=0,confidence=0;List<String>matched=new ArrayList<>(),missing=new ArrayList<>(),feedback=new ArrayList<>(),improved=new ArrayList<>(),risks=new ArrayList<>();for(AIEvaluationResponse value:values){overall+=value.getOverallScore();Scores s=value.getScores();content+=s.getContent();grammar+=s.getGrammar();fluency+=s.getFluency();confidence+=s.getConfidence();matched.addAll(value.getMatchedKeywords());missing.addAll(value.getMissingKeywords());feedback.addAll(value.getFeedback());if(!value.getImprovedAnswer().isEmpty())improved.add(value.getImprovedAnswer());if(value.isRiskDetected())risks.add(value.getRiskReason());}int n=values.size();set(R.id.overallScore,(overall/n)+"\n/100");set(R.id.contentScore,"Content\n\n"+(content/n)+"/40");set(R.id.grammarScore,"Grammar\n\n"+(grammar/n)+"/20");set(R.id.fluencyScore,"Fluency\n\n"+(fluency/n)+"/20");set(R.id.confidenceScore,"Confidence\n\n"+(confidence/n)+"/20");set(R.id.keywordSummary,"Matched: "+join(matched)+"\n\nMissing: "+join(missing));set(R.id.feedbackText,bullets(feedback));set(R.id.improvedAnswer,improved.isEmpty()?"No improved answer available.":improved.get(improved.size()-1));TextView risk=findViewById(R.id.riskWarning);if(!risks.isEmpty()){risk.setVisibility(View.VISIBLE);risk.setText("Risk warning: "+join(risks));}if(stored!=null)set(R.id.reportInsights,insights(stored));}
+    private void renderStored(InterviewReport r){set(R.id.overallScore,r.overallScore+"\n/100");set(R.id.contentScore,"Content\n\n"+r.contentScore+"%");set(R.id.grammarScore,"Grammar\n\n"+r.grammarScore+"%");set(R.id.fluencyScore,"Fluency\n\n"+r.fluencyScore+"%");set(R.id.confidenceScore,"Confidence\n\n"+r.confidenceScore+"%");set(R.id.keywordSummary,"Coverage: "+r.keywordCoverage+"%\nMatched: "+join(r.matchedKeywords)+"\nMissing: "+join(r.missingKeywords));set(R.id.feedbackText,bullets(r.feedback));set(R.id.improvedAnswer,"See your saved answers and personalized coaching below.");set(R.id.reportInsights,insights(r));if(r.riskDetected){TextView risk=findViewById(R.id.riskWarning);risk.setVisibility(View.VISIBLE);risk.setText("Risk warning: "+join(r.riskyStatements));}}
+    private String insights(InterviewReport r){return r.aiSummary+"\n\nGrade: "+r.grade+" • Duration: "+(r.durationMillis/60000)+" min • Questions: "+r.questionsAnswered+"\n\nStrengths: "+join(r.strongAreas)+"\n\nWeak areas: "+join(r.weakAreas)+"\n\nRecommended practice:\n"+bullets(r.aiSuggestions)+"\n\nAchievements: "+join(r.achievements);}
+    private void export(boolean share){InterviewReport r=ReportStore.get();if(r==null){Toast.makeText(this,"Report is not available.",Toast.LENGTH_SHORT).show();return;}try{android.net.Uri uri=ReportPdfExporter.export(this,r);Toast.makeText(this,"Report saved to Downloads/AbroadIQ",Toast.LENGTH_LONG).show();if(share)ReportPdfExporter.share(this,uri);}catch(Exception e){Toast.makeText(this,"PDF could not be created. Please try again.",Toast.LENGTH_LONG).show();}}
+    private void set(int id,String text){((TextView)findViewById(id)).setText(text);}private String join(List<String>v){return v.isEmpty()?"None":android.text.TextUtils.join(", ",v);}private String bullets(List<String>v){if(v.isEmpty())return "No additional feedback.";StringBuilder b=new StringBuilder();for(String s:v)b.append("• ").append(s).append('\n');return b.toString().trim();}
+}

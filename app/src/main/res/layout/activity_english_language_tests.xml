@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent" android:background="#F8FAFE" android:fillViewport="true">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="20dp">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="52dp">
+            <ImageButton android:id="@+id/btnBack" android:layout_width="44dp" android:layout_height="44dp" android:layout_centerVertical="true" android:background="?attr/selectableItemBackgroundBorderless" android:padding="12dp" android:src="@drawable/ic_arrow_back"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:text="English Language Tests" android:textColor="#071A48" android:textSize="19sp" android:textStyle="bold"/>
+            <ImageButton android:id="@+id/btnBookmark" android:layout_width="44dp" android:layout_height="44dp" android:layout_alignParentEnd="true" android:layout_centerVertical="true" android:background="@drawable/bg_badge_soft_blue" android:padding="12dp" android:src="@drawable/ic_book" app:tint="#2455E6"/>
+        </RelativeLayout>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="180dp" android:layout_marginTop="12dp" android:background="@drawable/bg_test_hero" android:gravity="center_vertical" android:orientation="horizontal" android:padding="22dp">
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Build your English\nskills and achieve\nyour target score" android:textColor="#071A48" android:textSize="21sp" android:textStyle="bold"/>
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="Practice, learn and improve with expert crafted materials." android:textColor="#52617C" android:textSize="13sp"/>
+            </LinearLayout>
+            <TextView android:layout_width="92dp" android:layout_height="92dp" android:gravity="center" android:text="A+\n🌍" android:textColor="#FFFFFF" android:textSize="27sp" android:textStyle="bold"/>
+        </LinearLayout>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:layout_marginBottom="12dp" android:text="All Tests" android:textColor="#071A48" android:textSize="18sp" android:textStyle="bold"/>
+
+        <androidx.cardview.widget.CardView android:id="@+id/cardIelts" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12dp" app:cardBackgroundColor="#FFFFFF" app:cardCornerRadius="18dp" app:cardElevation="2dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="118dp" android:gravity="center_vertical" android:orientation="horizontal" android:padding="14dp">
+                <TextView android:layout_width="76dp" android:layout_height="76dp" android:background="@drawable/bg_ielts_red" android:gravity="center" android:text="IELTS" android:textColor="#FFFFFF" android:textSize="20sp" android:textStyle="bold"/>
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginStart="16dp" android:layout_weight="1" android:orientation="vertical"><TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="IELTS Academic" android:textColor="#071A48" android:textSize="17sp" android:textStyle="bold"/><TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="International English Language\nTesting System" android:textColor="#52617C" android:textSize="13sp"/><TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:background="@drawable/bg_badge_soft_blue" android:paddingLeft="10dp" android:paddingTop="3dp" android:paddingRight="10dp" android:paddingBottom="3dp" android:text="Most Popular" android:textColor="#174CD8" android:textSize="11sp"/></LinearLayout>
+                <TextView android:layout_width="38dp" android:layout_height="38dp" android:background="@drawable/bg_badge_soft_blue" android:gravity="center" android:text="›" android:textColor="#164BE8" android:textSize="28sp"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/bg_test_card" android:orientation="vertical">
+            <include layout="@layout/item_english_test_pte"/><View android:layout_width="match_parent" android:layout_height="1dp" android:background="#EDF1F7"/><include layout="@layout/item_english_test_toefl"/><View android:layout_width="match_parent" android:layout_height="1dp" android:background="#EDF1F7"/><include layout="@layout/item_english_test_duolingo"/><View android:layout_width="match_parent" android:layout_height="1dp" android:background="#EDF1F7"/><include layout="@layout/item_english_test_cambridge"/><View android:layout_width="match_parent" android:layout_height="1dp" android:background="#EDF1F7"/><include layout="@layout/item_english_test_oet"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_marginBottom="18dp" android:background="@drawable/bg_test_hero" android:gravity="center_vertical" android:orientation="horizontal" android:padding="18dp"><TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="✨  Not sure which test to take?\n      Get AI recommendations for your goal." android:textColor="#26335C" android:textSize="13sp"/><Button android:layout_width="wrap_content" android:layout_height="44dp" android:background="@drawable/bg_purple_button" android:text="Find My Test" android:textAllCaps="false" android:textColor="#FFFFFF"/></LinearLayout>
+    </LinearLayout>
+</ScrollView>

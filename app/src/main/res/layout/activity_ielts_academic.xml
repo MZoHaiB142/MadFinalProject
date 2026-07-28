@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8FAFE"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="52dp">
+
+            <ImageButton
+                android:id="@+id/btnBack"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_centerVertical="true"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:padding="12dp"
+                android:src="@drawable/ic_arrow_back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="IELTS Academic"
+                android:textColor="#071A48"
+                android:textSize="19sp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/btnFavorite"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_alignParentEnd="true"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:padding="11dp"
+                android:src="@drawable/heart" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_ielts_red"
+            android:orientation="vertical"
+            android:padding="22dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:background="@drawable/bg_test_card"
+                    android:gravity="center"
+                    android:text="IELTS"
+                    android:textColor="#D51D2B"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="IELTS Academic"
+                        android:textColor="#FFFFFF"
+                        android:textSize="21sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:text="International English Language\nTesting System"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/bg_badge_soft_blue"
+                        android:padding="6dp"
+                        android:text="Most Popular"
+                        android:textColor="#164BE8"
+                        android:textSize="11sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp"
+                android:gravity="center"
+                android:text="◷  Duration        ?  Questions        ▥  Sections        ☆  Accepted in\n   2h 45m                 200                       4                 150+ Countries"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/IeltsSectionCard">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="About IELTS"
+                android:textColor="#071A48"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="IELTS is the world's most popular English language test for higher education and global migration.                                      Read More"
+                android:textColor="#52617C"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/IeltsSectionCard">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Test Sections                                              View Syllabus"
+                android:textColor="#071A48"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="🎧 Listening      📖 Reading       ✍ Writing       🎙 Speaking\n    45 min              60 min              60 min             11–14 min"
+                android:textColor="#071A48"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/IeltsSectionCard">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Your Preparation Progress                         View Progress"
+                android:textColor="#071A48"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:text="Overall Progress                                                        35%"
+                android:textColor="#071A48"
+                android:textSize="14sp" />
+
+            <ProgressBar
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:layout_marginTop="8dp"
+                android:max="100"
+                android:progress="35"
+                android:progressTint="#633DE2" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:text="Listening 40%        Reading 30%        Writing 30%        Speaking 40%"
+                android:textColor="#52617C"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="22dp"
+            android:text="Study Tools"
+            android:textColor="#071A48"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/ToolTile"
+                android:text="📄  Study Material\nNotes, PDFs &amp; Tips" />
+
+            <TextView
+                style="@style/ToolTile"
+                android:text="▶  Video Lessons\nExpert Lectures" />
+
+            <TextView
+                style="@style/ToolTile"
+                android:text="Aa  Vocabulary\nBuild your words" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/ToolTile"
+                android:text="▣  Practice Questions\nTopic-wise MCQs" />
+
+            <TextView
+                style="@style/ToolTile"
+                android:text="▦  Mock Tests\nFull length tests" />
+
+            <TextView
+                style="@style/ToolTile"
+                android:text="✎  AI Writing Checker\nCheck your essays" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/ToolTile"
+                android:text="🎙 AI Speaking\nPractice &amp; get band" />
+
+            <TextView
+                style="@style/ToolTile"
+                android:text="📈 Score Predictor\nPredict your band" />
+
+            <TextView
+                style="@style/ToolTile"
+                android:text="▤  Mistake Notebook\nTrack your mistakes" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnStartPreparing"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_marginBottom="18dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/bg_purple_button"
+            android:text="Start Preparing Now   →"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp" />
+
+    </LinearLayout>
+</ScrollView>

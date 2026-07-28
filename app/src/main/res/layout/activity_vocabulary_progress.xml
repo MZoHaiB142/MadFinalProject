@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent" android:background="#FAFBFE">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="14dp">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="54dp">
+            <ImageButton android:id="@+id/btnBack" android:layout_width="42dp" android:layout_height="42dp" android:layout_centerVertical="true" android:background="?attr/selectableItemBackgroundBorderless" android:contentDescription="Back" android:padding="11dp" android:src="@drawable/ic_arrow_back"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:text="Your Progress" android:textColor="#071A48" android:textSize="17sp" android:textStyle="bold"/>
+        </RelativeLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="112dp" android:background="@drawable/bg_vocabulary_soft" android:gravity="center_vertical" android:orientation="horizontal" android:padding="17dp">
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Words Learned" android:textColor="#52617C"/>
+                <TextView android:id="@+id/wordsLearned" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:textColor="#17294D" android:textSize="31sp" android:textStyle="bold"/>
+            </LinearLayout>
+            <TextView android:id="@+id/overallVocabularyProgress" android:layout_width="70dp" android:layout_height="70dp" android:background="@drawable/bg_grammar_ring_green" android:gravity="center" android:text="0%" android:textColor="#176B36" android:textStyle="bold"/>
+        </LinearLayout>
+        <TextView style="@style/PrepSectionTitle" android:text="Weekly Activity" />
+        <LinearLayout android:id="@+id/weeklyContainer" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/bg_test_card" android:orientation="vertical" android:padding="14dp"/>
+        <TextView style="@style/PrepSectionTitle" android:text="Learning Status" />
+        <LinearLayout android:layout_width="match_parent" android:layout_height="86dp" android:orientation="horizontal">
+            <TextView android:id="@+id/knownCount" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginEnd="5dp" android:layout_weight="1" android:background="@drawable/bg_vocabulary_success" android:gravity="center" android:text="Known\n0" android:textColor="#16A34A" android:textStyle="bold"/>
+            <TextView android:id="@+id/learningCount" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginHorizontal="5dp" android:layout_weight="1" android:background="@drawable/bg_vocabulary_soft" android:gravity="center" android:text="Learning\n0" android:textColor="#F59E0B" android:textStyle="bold"/>
+            <TextView android:id="@+id/difficultCount" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginStart="5dp" android:layout_weight="1" android:background="@drawable/bg_vocabulary_soft" android:gravity="center" android:text="Difficult\n0" android:textColor="#EF4444" android:textStyle="bold"/>
+        </LinearLayout>
+        <TextView style="@style/PrepSectionTitle" android:text="Performance" />
+        <LinearLayout android:layout_width="match_parent" android:layout_height="90dp" android:orientation="horizontal">
+            <TextView android:id="@+id/dailyStreak" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginEnd="6dp" android:layout_weight="1" android:background="@drawable/bg_test_card" android:gravity="center" android:text="Daily Streak\n0 Days" android:textColor="#17294D" android:textStyle="bold"/>
+            <TextView android:id="@+id/quizAccuracy" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginStart="6dp" android:layout_weight="1" android:background="@drawable/bg_test_card" android:gravity="center" android:text="Quiz Accuracy\n0%" android:textColor="#17294D" android:textStyle="bold"/>
+        </LinearLayout>
+        <ProgressBar android:id="@+id/loading" android:layout_width="36dp" android:layout_height="36dp" android:layout_gravity="center_horizontal" android:layout_margin="18dp" android:indeterminateTint="#5B35DD"/>
+    </LinearLayout>
+</ScrollView>

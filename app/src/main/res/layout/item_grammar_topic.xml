@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="72dp"
+    android:layout_marginBottom="9dp"
+    android:background="@drawable/bg_test_card"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?attr/selectableItemBackground"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingStart="10dp"
+    android:paddingEnd="12dp">
+
+    <TextView
+        android:id="@+id/topicIcon"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:gravity="center"
+        android:text="PS"
+        android:textColor="#176B36"
+        android:textSize="10sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/topicTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1. Parts of Speech"
+            android:textColor="#17294D"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/topicMeta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="5 Lessons"
+            android:textColor="#748096"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+    <com.example.madfinalproject.views.LessonProgressView
+        android:id="@+id/topicProgress"
+        android:layout_width="42dp"
+        android:layout_height="42dp" />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="7dp"
+        android:contentDescription="Open topic"
+        android:src="@drawable/ic_arrow_right" />
+</LinearLayout>

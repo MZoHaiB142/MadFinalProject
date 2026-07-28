@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FBFCFF"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="54dp">
+
+            <ImageButton
+                android:id="@+id/btnBack"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_centerVertical="true"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:padding="12dp"
+                android:src="@drawable/ic_arrow_back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Visa Interview Preparation"
+                android:textColor="#071A48"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="165dp"
+            android:background="@drawable/bg_visa_purple_hero"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="18dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Prepare with Confidence.\nAce Your Visa Interview."
+                    android:textColor="#35149A"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="Real questions. Expert tips.\nPersonalized practice."
+                    android:textColor="#52617C"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:scaleType="fitCenter"
+                android:src="@drawable/visa_interview" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="78dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/bg_test_card"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp">
+
+            <!-- Column 1: Questions -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="120+"
+                    android:textColor="#35149A"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="Questions"
+                    android:textColor="#52617C"
+                    android:textSize="11sp" />
+            </LinearLayout>
+
+            <!-- Faint Vertical Divider 1 -->
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="6dp"
+                android:background="#E6E9F0" />
+
+            <!-- Column 2: Mock Interviews -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10+"
+                    android:textColor="#35149A"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="Mock Interviews"
+                    android:textColor="#52617C"
+                    android:textSize="11sp" />
+            </LinearLayout>
+
+            <!-- Faint Vertical Divider 2 -->
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="6dp"
+                android:background="#E6E9F0" />
+
+            <!-- Column 3: Visa Types -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ALL"
+                    android:textColor="#35149A"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="Visa Types"
+                    android:textColor="#52617C"
+                    android:textSize="11sp" />
+            </LinearLayout>
+
+            <!-- Faint Vertical Divider 3 -->
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="6dp"
+                android:background="#E6E9F0" />
+
+            <!-- Column 4: Guidance -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Expert"
+                    android:textColor="#35149A"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="Guidance"
+                    android:textColor="#52617C"
+                    android:textSize="11sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Header Section: Visa Types & View All -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Visa Types"
+                android:textColor="#071A48"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="View All"
+                android:textColor="#35149A"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- RadioGroup Section: Khulay aur clear options -->
+        <RadioGroup
+            android:id="@+id/countryGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/countryUsa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:buttonTint="#35149A"
+                android:paddingStart="12dp"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp"
+                android:lineSpacingExtra="6dp"
+                android:text="🇺🇸   Student Visa (F-1)\n       USA"
+                android:textColor="#071A48"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/countryAustralia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:buttonTint="#35149A"
+                android:paddingStart="12dp"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp"
+                android:lineSpacingExtra="6dp"
+                android:text="🇦🇺   Student Visa (Subclass 500)\n       Australia"
+                android:textColor="#071A48"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/countryUk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:buttonTint="#35149A"
+                android:paddingStart="12dp"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp"
+                android:lineSpacingExtra="6dp"
+                android:text="🇬🇧   Student Visa (Tier 4)\n       UK"
+                android:textColor="#071A48"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/countryCanada"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:buttonTint="#35149A"
+                android:paddingStart="12dp"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp"
+                android:lineSpacingExtra="6dp"
+                android:text="🇨🇦   Student Visa\n       Canada"
+                android:textColor="#071A48"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/countryGermany"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:buttonTint="#35149A"
+                android:paddingStart="12dp"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp"
+                android:lineSpacingExtra="6dp"
+                android:text="🌐   Others\n       More countries"
+                android:textColor="#071A48"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </RadioGroup>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/bg_visa_purple_hero"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <!-- Icon Area -->
+        <TextView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/bg_badge_soft_blue"
+            android:gravity="center"
+            android:text="🎯"
+            android:textSize="24sp" />
+
+        <!-- Text Area (Title & Description) -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Not sure what to expect?"
+                android:textColor="#071A48"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:lineSpacingExtra="3dp"
+                android:text="Get a personalized interview prep plan based on your profile."
+                android:textColor="#52617C"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <!-- Call to Action Button -->
+        <Button
+            android:id="@+id/btnStartInterview"
+            android:layout_width="wrap_content"
+            android:layout_height="46dp"
+            android:minWidth="90dp"
+            android:paddingStart="14dp"
+            android:paddingEnd="14dp"
+            android:alpha="0.6"
+            android:background="@drawable/bg_purple_button"
+            android:enabled="false"
+            android:text="Start Now"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+    </LinearLayout>
+</ScrollView>

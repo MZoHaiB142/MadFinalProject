@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent" android:background="#FAFBFE">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="14dp">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="54dp">
+            <ImageButton android:id="@+id/btnBack" android:layout_width="42dp" android:layout_height="42dp" android:layout_centerVertical="true" android:background="?attr/selectableItemBackgroundBorderless" android:contentDescription="Back" android:padding="11dp" android:src="@drawable/ic_arrow_back"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:text="Listening Practice" android:textColor="#071A48" android:textSize="17sp" android:textStyle="bold"/>
+        </RelativeLayout>
+        <TextView android:id="@+id/listeningCounter" android:layout_width="match_parent" android:layout_height="wrap_content" android:textColor="#52617C" android:textStyle="bold"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="14dp" android:gravity="center" android:text="Listen carefully and select the word you hear." android:textColor="#52617C" android:textSize="12sp"/>
+        <TextView android:id="@+id/btnPlayWord" android:layout_width="86dp" android:layout_height="86dp" android:layout_gravity="center_horizontal" android:layout_marginTop="24dp" android:background="@drawable/bg_vocabulary_gradient" android:gravity="center" android:text="🔊" android:textSize="29sp"/>
+        <ProgressBar android:id="@+id/audioProgress" style="?android:attr/progressBarStyleHorizontal" android:layout_width="match_parent" android:layout_height="7dp" android:layout_marginTop="20dp" android:max="100" android:progressTint="#6D4CEB" android:progressBackgroundTint="#E6E2F8"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="26dp" android:text="Which word did you hear?" android:textColor="#17294D" android:textSize="14sp" android:textStyle="bold"/>
+        <LinearLayout android:id="@+id/listeningOptions" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:orientation="vertical"/>
+        <TextView android:id="@+id/listeningFeedback" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:padding="14dp" android:textSize="12sp" android:visibility="gone"/>
+        <Button android:id="@+id/btnNextListening" android:layout_width="match_parent" android:layout_height="52dp" android:layout_marginTop="15dp" android:background="@drawable/bg_purple_button" android:enabled="false" android:text="Next Word" android:textAllCaps="false" android:textColor="#FFFFFF"/>
+        <ProgressBar android:id="@+id/loading" android:layout_width="36dp" android:layout_height="36dp" android:layout_gravity="center_horizontal" android:layout_margin="18dp" android:indeterminateTint="#5B35DD"/>
+    </LinearLayout>
+</ScrollView>

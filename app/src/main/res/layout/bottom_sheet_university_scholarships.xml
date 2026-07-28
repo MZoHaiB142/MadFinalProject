@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="#FFFFFF" android:fillViewport="true">
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="20dp">
+<View android:layout_width="44dp" android:layout_height="4dp" android:layout_gravity="center_horizontal" android:background="@drawable/bg_sheet_handle"/>
+<TextView android:id="@+id/sheetTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="18dp" android:text="University Scholarships" android:textColor="#071A48" android:textSize="20sp" android:textStyle="bold"/>
+<TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="Available funding opportunities" android:textColor="#6B7280" android:textSize="13sp"/>
+<TextView android:id="@+id/emptyScholarships" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:gravity="center" android:padding="24dp" android:text="No scholarship details are currently available for this university." android:textColor="#6B7280" android:visibility="gone"/>
+<LinearLayout android:id="@+id/scholarshipContainer" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="14dp" android:orientation="vertical"/>
+<Button android:id="@+id/btnCloseSheet" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginTop="12dp" android:layout_marginBottom="8dp" android:background="@drawable/bg_button_blue" android:text="Close" android:textAllCaps="false" android:textColor="#FFFFFF"/>
+</LinearLayout></androidx.core.widget.NestedScrollView>

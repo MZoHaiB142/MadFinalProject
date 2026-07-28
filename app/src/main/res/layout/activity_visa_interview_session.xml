@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#FBFCFF" android:fillViewport="true">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:padding="16dp">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="54dp">
+            <ImageButton android:id="@+id/btnBack" android:layout_width="44dp" android:layout_height="44dp"
+                android:layout_centerVertical="true" android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Back" android:padding="12dp" android:src="@drawable/ic_arrow_back"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_centerInParent="true" android:text="Mock Interview" android:textColor="#071A48"
+                android:textSize="18sp" android:textStyle="bold"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="44dp"
+                android:layout_alignParentEnd="true" android:gravity="center" android:text="Exit"
+                android:textColor="#E62031" android:textSize="12sp"/>
+        </RelativeLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="52dp"
+            android:gravity="center_vertical" android:orientation="horizontal">
+            <TextView android:id="@+id/questionNumber" android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:text="Question 1 of 5" android:textColor="#243453"
+                android:textSize="12sp" android:textStyle="bold"/>
+            <TextView android:id="@+id/countryLabel" android:layout_width="wrap_content" android:layout_height="34dp"
+                android:background="@drawable/bg_badge_soft_blue" android:gravity="center"
+                android:paddingLeft="10dp" android:paddingRight="10dp" android:text="12:45"
+                android:textColor="#243453" android:textSize="11sp"/>
+        </LinearLayout>
+        <FrameLayout android:layout_width="match_parent" android:layout_height="245dp"
+            android:background="@drawable/bg_test_card">
+            <ImageView android:layout_width="match_parent" android:layout_height="match_parent"
+                android:contentDescription="Visa interviewer" android:scaleType="centerCrop"
+                android:src="@drawable/visa_interviewer"/>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="62dp"
+                android:layout_gravity="bottom" android:gravity="center" android:orientation="horizontal">
+                <TextView style="@style/InterviewControl" android:text="Mic"/>
+                <TextView style="@style/InterviewControl" android:text="Cam"/>
+                <TextView style="@style/InterviewControl" android:text="Video"/>
+            </LinearLayout>
+        </FrameLayout>
+        <ProgressBar android:id="@+id/interviewProgress" style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent" android:layout_height="8dp" android:layout_marginTop="24dp"
+            android:max="100" android:progress="35" android:progressTint="#6542E6"/>
+        <TextView android:id="@+id/questionText" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="22dp" android:text="What are your strengths and weaknesses?"
+            android:textColor="#071A48" android:textSize="17sp" android:textStyle="bold"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="8dp" android:text="Take a moment to think and answer."
+            android:textColor="#52617C" android:textSize="12sp"/>
+        <EditText android:id="@+id/answerTranscript" android:layout_width="match_parent"
+            android:layout_height="110dp" android:layout_marginTop="16dp" android:background="@drawable/bg_test_card"
+            android:gravity="top|start" android:hint="Your spoken answer will appear here. You can also type or edit it."
+            android:inputType="textCapSentences|textMultiLine" android:padding="14dp" android:scrollbars="vertical"
+            android:textColor="#071A48" android:textColorHint="#7C879D" android:textSize="14sp"/>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="64dp"
+            android:layout_marginTop="12dp" android:background="@drawable/bg_continue_pink"
+            android:gravity="center_vertical" android:orientation="horizontal" android:padding="14dp">
+            <TextView android:id="@+id/speechStatusText" android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:text="Tap the microphone to answer" android:textColor="#E62031"
+                android:textSize="12sp" android:textStyle="bold"/>
+            <TextView android:id="@+id/btnClearTranscript" android:layout_width="wrap_content" android:layout_height="40dp"
+                android:background="?attr/selectableItemBackgroundBorderless" android:gravity="center"
+                android:paddingLeft="10dp" android:paddingRight="10dp" android:text="Clear"
+                android:textColor="#071A48" android:textSize="12sp" android:textStyle="bold"/>
+        </LinearLayout>
+        <TextView android:id="@+id/aiCoachFeedback" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:background="@drawable/bg_test_card" android:padding="14dp" android:textColor="#35149A" android:textSize="12sp" android:visibility="gone"/>
+        <TextView android:id="@+id/btnRecordAnswer" android:layout_width="72dp" android:layout_height="72dp"
+            android:layout_gravity="center_horizontal" android:layout_marginTop="18dp"
+            android:background="@drawable/bg_score_pink" android:contentDescription="Start or stop speech recognition"
+            android:gravity="center" android:text="●" android:textColor="#E62031" android:textSize="27sp"/>
+        <Button android:id="@+id/btnNextQuestion" android:layout_width="match_parent" android:layout_height="52dp"
+            android:layout_marginTop="12dp" android:layout_marginBottom="18dp"
+            android:background="@drawable/bg_purple_button" android:enabled="false"
+            android:text="Save Answer &amp; Next Question  →" android:textAllCaps="false"
+            android:textColor="#FFFFFF" android:textSize="14sp"/>
+    </LinearLayout>
+</ScrollView>

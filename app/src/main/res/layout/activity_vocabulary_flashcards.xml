@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFBFE"
+    android:orientation="vertical"
+    android:padding="14dp">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="54dp">
+        <ImageButton android:id="@+id/btnBack" android:layout_width="42dp" android:layout_height="42dp" android:layout_centerVertical="true" android:background="?attr/selectableItemBackgroundBorderless" android:contentDescription="Back" android:padding="11dp" android:src="@drawable/ic_arrow_back"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:text="Flashcards" android:textColor="#071A48" android:textSize="17sp" android:textStyle="bold"/>
+        <TextView android:id="@+id/cardCounter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true" android:layout_centerVertical="true" android:text="0 / 0" android:textColor="#52617C" android:textStyle="bold"/>
+    </RelativeLayout>
+    <ProgressBar android:id="@+id/cardProgress" style="?android:attr/progressBarStyleHorizontal" android:layout_width="match_parent" android:layout_height="7dp" android:max="100" android:progress="0" android:progressTint="#6D4CEB" android:progressBackgroundTint="#E6E2F8"/>
+    <LinearLayout
+        android:id="@+id/flashcard"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="18dp"
+        android:layout_weight="1"
+        android:background="@drawable/bg_vocabulary_gradient"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="28dp">
+        <TextView android:id="@+id/cardWord" android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center" android:text="Loading..." android:textColor="#FFFFFF" android:textSize="30sp" android:textStyle="bold"/>
+        <TextView android:id="@+id/cardBack" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="18dp" android:gravity="center" android:lineSpacingExtra="5dp" android:textColor="#F1EEFF" android:textSize="15sp" android:visibility="gone"/>
+        <TextView android:id="@+id/btnSpeak" android:layout_width="54dp" android:layout_height="54dp" android:layout_marginTop="25dp" android:background="@drawable/bg_vocabulary_soft" android:gravity="center" android:text="🔊" android:textSize="20sp"/>
+    </LinearLayout>
+    <TextView android:id="@+id/cardHint" android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center" android:padding="16dp" android:text="Tap the card to see meaning" android:textColor="#748096" android:textSize="11sp"/>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="74dp" android:orientation="horizontal">
+        <Button android:id="@+id/btnDifficult" android:layout_width="0dp" android:layout_height="58dp" android:layout_marginEnd="5dp" android:layout_weight="1" android:background="@drawable/bg_vocabulary_soft" android:text="✕\nDifficult" android:textAllCaps="false" android:textColor="#EF4444"/>
+        <Button android:id="@+id/btnLearning" android:layout_width="0dp" android:layout_height="58dp" android:layout_marginHorizontal="5dp" android:layout_weight="1" android:background="@drawable/bg_vocabulary_soft" android:text="–\nLearning" android:textAllCaps="false" android:textColor="#F59E0B"/>
+        <Button android:id="@+id/btnKnown" android:layout_width="0dp" android:layout_height="58dp" android:layout_marginStart="5dp" android:layout_weight="1" android:background="@drawable/bg_vocabulary_success" android:text="✓\nKnown" android:textAllCaps="false" android:textColor="#16A34A"/>
+    </LinearLayout>
+    <ProgressBar android:id="@+id/loading" android:layout_width="36dp" android:layout_height="36dp" android:layout_gravity="center_horizontal" android:indeterminateTint="#5B35DD"/>
+</LinearLayout>
